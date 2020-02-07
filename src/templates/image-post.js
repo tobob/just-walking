@@ -1,14 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const { name, dateTime } = pageContext
+  const { key, name } = pageContext;
+  const imageUrl = `http://${name}.s3.amazonaws.com/${key}`;
+
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -32,10 +34,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {dateTime}
+            <img src={imageUrl} />
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
             marginBottom: rhythm(1),

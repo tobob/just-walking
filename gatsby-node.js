@@ -51,44 +51,40 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  // const photographyQuery = graphql(
-  //   `
-  //     {
-  //       allS3ImageAsset {
-  //         edges {
-  //           node {
-  //             ETag
-  //             EXIF {
-  //               DateCreatedISO
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   `
-  // )
+  const photographyQuery = await graphql(
+    `
+    {
+      allS3Image {
+        edges {
+          node {
+            Name
+            Key
+          }
+        }
+      }
+    }
+  `
+  )
 
-  // if (photographyQuery) {
-  //   throw photographyQuery.errors
-  // }
+  if (photographyQuery.error) {
+    throw photographyQuery.errors
+  }
 
 
-  // const photographyTemplate = path.resolve(
-  //   './src/templates/image-post.js'
-  // )
-  // const images = result.data.allS3ImageAsset.edges;
-  // const imagesGroupedByDate = _.groupBy(images, 'node.EXIF.DateCreatedISO')
-  // _.each(imagesGroupedByDate, (images, date) => {
-  //   createPage({
-  //     path: `/photography/${date}`,
-  //     component: photographyTemplate,
-  //     context: {
-  //       name: date,
-  //       datetime: DateTime.fromISO(date),
-  //       type: PageType.Photography,
-  //     },
-  //   })
-  // })
+  const photographyTemplate = path.resolve(
+    './src/templates/image-post.js'
+  )
+  const images = photographyQuery.data.allS3Image.edges;
+  _.each(images, (image) => {
+    createPage({
+      path: `/photography/${image.node.Key.split('/')[1]}`,
+      component: photographyTemplate,
+      context: {
+        key: image.node.Key,
+        name: image.node.Name,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
