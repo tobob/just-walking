@@ -1,14 +1,30 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: 'Just Walking Me',
+    author: `Bob`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: "https://just-walking.me",
     social: {
       twitter: `kylemathews`,
     },
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-s3',
+      options: {
+        aws: {
+          accessKeyId: process.env.AWS_KEY_ID,
+          secretAccessKey: process.env.AWS_SECRET_KEY,
+          // protocol: 'https'
+          region: process.env.AWS_REGION_S3,
+        },
+        buckets: ['just-walking-me']
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

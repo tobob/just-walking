@@ -1,5 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require('lodash');
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -31,6 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors
   }
 
+
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
 
@@ -48,6 +50,45 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  // const photographyQuery = graphql(
+  //   `
+  //     {
+  //       allS3ImageAsset {
+  //         edges {
+  //           node {
+  //             ETag
+  //             EXIF {
+  //               DateCreatedISO
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   `
+  // )
+
+  // if (photographyQuery) {
+  //   throw photographyQuery.errors
+  // }
+
+
+  // const photographyTemplate = path.resolve(
+  //   './src/templates/image-post.js'
+  // )
+  // const images = result.data.allS3ImageAsset.edges;
+  // const imagesGroupedByDate = _.groupBy(images, 'node.EXIF.DateCreatedISO')
+  // _.each(imagesGroupedByDate, (images, date) => {
+  //   createPage({
+  //     path: `/photography/${date}`,
+  //     component: photographyTemplate,
+  //     context: {
+  //       name: date,
+  //       datetime: DateTime.fromISO(date),
+  //       type: PageType.Photography,
+  //     },
+  //   })
+  // })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
