@@ -11,6 +11,7 @@ module.exports = {
     social: {
       twitter: `kylemathews`,
     },
+    viewport: 'width=device-width, initial-scale=1.0, maximum-scale=2.0',
   },
   plugins: [
     `gatsby-plugin-sass`,

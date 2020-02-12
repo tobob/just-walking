@@ -1,0 +1,74 @@
+//----- fonts sizes and line-heights -----------------------------------------------------------------------------------
+$font-size-xs:                    12px
+$font-size-sm:                    14px
+$font-size-base:                  18px
+$font-size-lg:                    22px
+$font-size-xl:                    28px
+$font-size-2xl:                   48px
+$font-size-3xl:                   72px
+
+//----- spacings (margins/paddings) ------------------------------------------------------------------------------------
+$m-xs:                            8px
+$m-sm:                            $m-xs * 2
+$m-base:                          $m-xs * 3
+$m-lg:                            $m-base * 2
+$m-xl:                            $m-base * 3
+$m-2xl:                           $m-base * 4
+
+//----- line heights ---------------------------------------------------------------------------------------------------
+$line-height-sm:                  $m-sm
+$line-height-base:                $m-base
+$line-height-lg:                  $m-lg
+
+//----- border radiuses ------------------------------------------------------------------------------------------------
+$border-radius-base:              $m-base
+$border-radius-sm:                $m-xs
+$border-radius-lg:                $m-lg
+
+//----- breakpoints ----------------------------------------------------------------------------------------------------
+$grid-breakpoints:                (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+$grid-columns:                    12
+$grid-gutter-width:               $m-base
+
+$container:                       map-get($grid-breakpoints, xl)
+
+//----- colors ---------------------------------------------------------------------------------------------------------
+$color-primary:                   #2461bd
+$color-success:                   #48bd66
+$color-warning:                   #ffd200
+$color-danger:                    #e62a2a
+$color-info:                      #5bc0de
+$color-secondary:                 #2461bd
+
+$color-white:                     #ffffff
+$color-gray-300:                  hsl(36, 5%, 85%)
+$color-gray-400:                  hsl(36, 5%, 75%)
+$color-gray-500:                  hsl(36, 5%, 62%)
+$color-gray-600:                  hsl(36, 5%, 38%)
+$color-gray-700:                  hsl(36, 5%, 28%)
+$color-black:                     #04080c
+
+//----- fonts ----------------------------------------------------------------------------------------------------------
+$font-family-header:              'Rubik'
+$font-family-body:                'Nunito Sans'
+$font-stack-header:               $font-family-header, sans-serif
+$font-stack-body:                 $font-family-body, serif
+
+$font-weight-light:               300
+$font-weight-regular:             400
+$font-weight-bold:                700
+
+$icon-size:                       $m-base
+
+//----- transitions ----------------------------------------------------------------------------------------------------
+$transition-duration:             .3s
+$transition-function:              ease-in-out
+
+//----- z-indexes ------------------------------------------------------------------------------------------------------
+$z-negative:                      -1
+$z-lower:                         30
+$z-low:                           40
+$z-base:                          50
+$z-high:                          60
+$z-higher:                        70

@@ -1,0 +1,19 @@
+//----- Edge * ---------------------------------------------------------------------------------------------------------
+@supports (-ms-ime-align: auto)
+  .example
+    display: block
+
+//----- Internet Explorer ≥ 10 -----------------------------------------------------------------------------------------
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .example
+    display: block
+
+//----- Safari >= 9 ----------------------------------------------------------------------------------------------------
+@supports (-webkit-flow-into: break)
+  .example
+    display: block
+
+//----- Safari Mobile --------------------------------------------------------------------------------------------------  
+@supports (-webkit-overflow-scrolling: touch)
+  .example
+    display: block

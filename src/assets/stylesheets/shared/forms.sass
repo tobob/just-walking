@@ -1,0 +1,135 @@
+=choice-base
+  color: $color-gray-600
+  display: flex
+  font-size: $font-size-sm
+  margin-bottom: $m-sm
+
+=choice-input
+  opacity: 0
+  position: absolute
+  z-index: $z-negative
+
+=choice-label
+  align-items: center
+  cursor: pointer
+  display: flex
+  width: 100%
+
+=choice-mark
+  content: ''
+  cursor: pointer
+  flex: 0 0 $m-base
+  height: $m-base
+  margin-right: $m-sm
+  width: $m-base
+
+.form
+  background-color: $color-white
+  margin:
+    left: auto
+    right: auto
+  max-width: 360px
+  overflow: auto
+  padding:
+    bottom: $m-xl
+    left: $m-base
+    right: $m-base
+    top: $m-sm
+  width: 100%
+
+  &__header
+    color: $color-gray-600
+    font:
+      size: $font-size-lg
+      weight: $font-weight-bold
+    margin:
+      bottom: $m-base
+      top: $m-xl
+
+  &__submit
+    margin-top: $m-xl
+
+  &__field
+    margin-bottom: $m-base
+
+  &__input
+    +transition(border-bottom-color)
+    border: none
+      bottom: 2px solid $color-gray-400
+      radius: 0
+    color: $color-gray-600
+    font:
+      family: $font-stack-body
+      size: $font-size-base
+      weight: $font-weight-regular
+    line-height: $m-lg
+    margin-bottom: $m-xs
+    padding-top: $m-sm
+    width: 100%
+
+    &::placeholder
+      color: $color-gray-500
+      opacity: 1
+
+    &:focus
+      border-bottom-color: $color-primary
+      outline: none
+
+  &__error
+    color: $color-danger
+    font-size: $font-size-sm
+
+.radio
+  $this: &
+  +choice-base
+
+  &__input
+    +choice-input
+
+    &:checked + #{$this}__label:before
+      box-shadow: inset 0 0 0 7px $color-primary
+
+  &__label
+    +choice-label
+
+    &:before
+      +transition(box-shadow)
+      +choice-mark
+      border-radius: $border-radius-lg
+      box-shadow: inset 0 0 0 1px $color-gray-600
+
+    &:hover:before
+      box-shadow: inset 0 0 0 2px $color-primary
+
+.checkbox
+  $this: &
+  +choice-base
+
+  &__input
+    +choice-input
+
+    &:checked + #{$this}__label:before
+      box-shadow: inset 0 0 0 $m-sm $color-primary
+
+  &__label
+    +choice-label
+    position: relative
+
+    &:before
+      +transition(box-shadow)
+      +choice-mark
+      border-radius: $border-radius-sm
+      box-shadow: inset 0 0 0 1px $color-gray-600
+
+    &:hover:before
+      box-shadow: inset 0 0 0 2px $color-primary
+
+    &:after
+      +choice-mark
+      background:
+        image: url('../images/icon-checkmark.svg')
+        position: center
+        size: $icon-size $icon-size
+      left: 0
+      position: absolute
+      top: 0

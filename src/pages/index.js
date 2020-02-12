@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import '../styles.scss';
+import '../assets/stylesheets/application.sass'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
