@@ -13,6 +13,7 @@ asphalt: 3
 mountainRange: Beskid Żywiecki
 mountains: ['Jałowiec', 'Czerniawa Sucha']
 ferns: null
+description: tour
 ---
 
 Wow, this is the first post I ever create on this blog,
