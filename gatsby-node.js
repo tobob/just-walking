@@ -53,12 +53,14 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const photographyQuery = await graphql(
     `
-    {
-      allS3Image {
+      {
+      allCloudinaryMedia {
         edges {
           node {
-            Name
-            Key
+            secure_url
+            public_id
+            url
+            id
           }
         }
       }
@@ -74,14 +76,15 @@ exports.createPages = async ({ graphql, actions }) => {
   const photographyTemplate = path.resolve(
     './src/templates/image-post.js'
   )
-  const images = photographyQuery.data.allS3Image.edges;
+  const images = photographyQuery.data.allCloudinaryMedia.edges;
   _.each(images, (image) => {
     createPage({
-      path: `/photography/${image.node.Key.split('/')[1]}`,
+      path: `/photography/${image.node.id}`,
       component: photographyTemplate,
       context: {
-        key: image.node.Key,
-        name: image.node.Name,
+        id: image.node.id,
+        url: image.node.url,
+        public_id: image.node.public_id,
       },
     })
   })

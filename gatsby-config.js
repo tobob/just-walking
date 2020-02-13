@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env`,
+  path: `.env.development`,
 })
 
 module.exports = {
@@ -15,17 +15,27 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    // {
+    //   resolve: 'gatsby-source-s3',
+    //   options: {
+    //     aws: {
+    //       accessKeyId: process.env.AWS_KEY_ID,
+    //       secretAccessKey: process.env.AWS_SECRET_KEY,
+    //       // protocol: 'https'
+    //       region: process.env.AWS_REGION_S3,
+    //     },
+    //     buckets: ['just-walking-me']
+    //   },
+    // },
+
     {
-      resolve: 'gatsby-source-s3',
+      resolve: `gatsby-source-cloudinary`,
       options: {
-        aws: {
-          accessKeyId: process.env.AWS_KEY_ID,
-          secretAccessKey: process.env.AWS_SECRET_KEY,
-          // protocol: 'https'
-          region: process.env.AWS_REGION_S3,
-        },
-        buckets: ['just-walking-me']
-      },
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
+        resourceType: `image`,
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,

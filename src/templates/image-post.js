@@ -1,16 +1,18 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import cloudinary from 'cloudinary-core';
 
 const BlogPostTemplate = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const { key, name } = pageContext;
-  const imageUrl = `http://${name}.s3.amazonaws.com/${key}`;
+  const { public_id } = pageContext;
 
+  const cl = cloudinary.Cloudinary.new();
+  cl.config("cloud_name", process.env.CLOUDINARY_CLOUD_NAME);
+  const url = cl.url(public_id, { width: 300, crop: "fill", height: 300 })
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -34,7 +36,7 @@ const BlogPostTemplate = ({ pageContext, data, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            <img src={imageUrl} />
+            <img src={url} alt={'image'} />
           </p>
         </header>
         <hr
