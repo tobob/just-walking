@@ -5,11 +5,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: 'Just Walking Me',
-    author: `Bob`,
+    author: `bob`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: "https://just-walking.me",
     social: {
-      twitter: `kylemathews`,
+      twitter: `bozek.wojciech`,
     },
     viewport: 'width=device-width, initial-scale=1.0, maximum-scale=2.0',
   },
@@ -27,7 +27,6 @@ module.exports = {
     //     buckets: ['just-walking-me']
     //   },
     // },
-
     {
       resolve: `gatsby-source-cloudinary`,
       options: {
@@ -35,6 +34,7 @@ module.exports = {
         apiKey: process.env.CLOUDINARY_API_KEY,
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
+        maxResults: 1000,
       }
     },
     {
