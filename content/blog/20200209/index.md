@@ -1,5 +1,6 @@
 ---
 title: Jałowiec
+mnpm: 1113
 date: "2020-02-10"
 startingPoint: Hucisko
 finishPoint: null
@@ -14,6 +15,8 @@ mountainRange: Beskid Żywiecki
 mountains: ['Jałowiec', 'Czerniawa Sucha']
 ferns: null
 description: tour
+wiki: https://pl.wikipedia.org/wiki/Ja%C5%82owiec_(Pasmo_Ja%C5%82owieckie)
+country: null
 ---
 
 Wow, this is the first post I ever create on this blog,
