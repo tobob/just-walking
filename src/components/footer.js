@@ -39,7 +39,6 @@ const Footer = () => {
     >
       <div className="footer-separator"></div>
       <div className="footer-right">
-
         <Image
           fixed={data.avatar.childImageSharp.fixed}
           alt={author}

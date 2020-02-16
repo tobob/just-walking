@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
 
         {posts.map(({ node }) => {
           const fileName = node.fields.slug.toString().replace(/\//g, '')
-          const url = cl.url(fileName, { width: 200, crop: "fill", height: 300 });
+          const url = cl.url(fileName, { width: 200, crop: "fill", height: 300, secure: true });
           const title = node.frontmatter.title || node.fields.slug
           const { mnpm } = node.frontmatter;
           return (

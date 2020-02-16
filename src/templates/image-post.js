@@ -11,7 +11,7 @@ const BlogPostTemplate = ({ pageContext, data, location }) => {
 
   const cl = cloudinary.Cloudinary.new();
   cl.config("cloud_name", 'just-walking-me');
-  const url = cl.url(public_id, { width: 300, crop: "fill", height: 300 })
+  const url = cl.url(public_id, { secure: true, width: 300, crop: "fill", height: 300 })
 
   return (
     <Layout location={location} title={siteTitle}>
