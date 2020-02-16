@@ -11,7 +11,7 @@ distance: 22km
 mapaTurystyczna: mapa-turystyczna.pl/route/hwm
 difficulty: 3
 asphalt: 3
-mountainRange: Beskid Żywiecki
+mountainRange: Maków Beskids
 mountains: ['Jałowiec', 'Czerniawa Sucha']
 ferns: null
 description: tour
