@@ -19,8 +19,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const images = data.allCloudinaryMedia;
   const mappedImages = images.edges.map(({ node }) => {
     const imageIsHorizontal = node.width > node.height;
-    const src = cl.url(node.public_id, { quality: 'auto:eco', angle: 'exif' })
-    const thumbnail = cl.url(node.public_id, { crop: 'thumb' })
+    const src = cl.url(node.public_id, { effect: 'saturation:50', quality: 'auto:good', angle: 'exif', crop: 'limit', height: 1280 })
+    const thumbnail = cl.url(node.public_id, { crop: 'thumb', effect: 'saturation:50', quality: 'auto:good' })
 
     return {
       src,
