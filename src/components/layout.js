@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { rhythm, scale } from "../utils/typography"
 import Hero from './hero';
 import SimpleNav from './SimpleNav';
+import Footer from './footer';
 
 const Layout = ({ location, title, children, withoutHero = false, withGoBack = false }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -60,11 +61,7 @@ const Layout = ({ location, title, children, withoutHero = false, withGoBack = f
     >
       {withoutHero ? <SimpleNav withGoBack={withGoBack} /> : <Hero />}
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">gatsby.js</a>
-      </footer>
+      <Footer />
     </div>
   )
 }
