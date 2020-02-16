@@ -3,8 +3,9 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 import Hero from './hero';
+import SimpleNav from './SimpleNav';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, withoutHero = false, withGoBack = false }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
@@ -57,8 +58,7 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
       }}
     >
-      <Hero />
-      <header>{header}</header>
+      {withoutHero ? <SimpleNav withGoBack={withGoBack} /> : <Hero />}
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with

@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout withoutHero withGoBack location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -122,7 +122,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allCloudinaryMedia(filter: {public_id: {regex: $slug}}) {
+    allCloudinaryMedia(filter: {public_id: {regex: $slug}}, sort: {fields: created_at}) {
       edges {
         node {
           public_id
