@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { Link, graphql, navigate } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -18,19 +18,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   const images = data.allCloudinaryMedia;
   const mappedImages = images.edges.map(({ node }) => {
-    const imageIsHorizontal = node.width > node.height;
     const src = cl.url(node.public_id, { effect: 'saturation:50', quality: 'auto:good', angle: 'exif', crop: 'limit', height: 1280 })
     const thumbnail = cl.url(node.public_id, { crop: 'thumb', effect: 'saturation:50', quality: 'auto:good' })
 
     return {
       src,
       thumbnail,
-      // thumbnailWidth: imageIsHorizontal ? 320 : 174,
-      // thumbnailHeight: !imageIsHorizontal ? 320 : 174,
       caption: node.public_id,
+      alt: node.id,
     }
   })
-  console.log(mappedImages);
+
+  const navigateToImage = (event) => {
+    window.open(`/photography/${event.currentTarget.alt}`, '_blank');
+    window.focus();
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -67,7 +70,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <Bio />
         </footer>
         <hr />
-        <Gallery images={mappedImages} />
+        <Gallery images={mappedImages} onClickImage={navigateToImage} />
       </article>
 
       <nav>
@@ -125,6 +128,7 @@ export const pageQuery = graphql`
           public_id
           height
           width
+          id
         }
       }
     }
