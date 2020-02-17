@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import Gallery from 'react-grid-gallery';
 import cloudinary from 'cloudinary-core';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const cl = cloudinary.Cloudinary.new();
 cl.config("cloud_name", 'just-walking-me');
@@ -18,14 +19,33 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const mappedImages = images.edges.map(({ node }) => {
     const src = cl.url(node.public_id, { secure: true, effect: 'saturation:50', quality: 'auto:good', angle: 'exif', crop: 'limit', height: 1280 })
     const thumbnail = cl.url(node.public_id, { secure: true, crop: 'thumb', effect: 'saturation:50', quality: 'auto:good' })
+    const { width, height } = node;
+    const prop = height / width;
+    const thumbHeight = prop > 1 ? 300 : 300 * prop;
+    const thumbWidth = prop > 1 ? 300 / prop : 300;
+
+    console.log(prop, thumbHeight, thumbWidth)
 
     return {
       src,
       thumbnail,
       caption: node.public_id,
       alt: node.id,
+      height,
+      width,
+      thumbHeight,
+      thumbWidth,
     }
   })
+
+  const mappedImagesAsComponents = mappedImages.map((image) => <LazyLoadImage
+    alt={image.alt}
+    height={image.thumbHeight}
+    effect="blur"
+    className="post-gallery__image"
+    wrapperClassName="post-gallery__image-wrapper"
+    src={image.thumbnail}
+    width={image.thumbWidth} />)
 
   const navigateToImage = (event) => {
     window.open(`/photography/${event.currentTarget.alt}`, '_blank');
@@ -92,7 +112,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         />
         <hr />
-        <Gallery images={mappedImages} onClickImage={navigateToImage} />
+        {mappedImagesAsComponents}
+        <div className="separator-40"></div>
       </article>
 
     </Layout>
