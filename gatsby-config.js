@@ -4,29 +4,23 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Just Walking Me',
+    title: "Just Walking Me",
     author: `bob`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: "https://just-walking.me",
     social: {
       twitter: `bozek.wojciech`,
     },
-    viewport: 'width=device-width, initial-scale=1.0, maximum-scale=2.0',
+    viewport: "width=device-width, initial-scale=1.0, maximum-scale=2.0",
   },
   plugins: [
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: 'gatsby-source-s3',
-    //   options: {
-    //     aws: {
-    //       accessKeyId: process.env.AWS_KEY_ID,
-    //       secretAccessKey: process.env.AWS_SECRET_KEY,
-    //       // protocol: 'https'
-    //       region: process.env.AWS_REGION_S3,
-    //     },
-    //     buckets: ['just-walking-me']
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-158660622-1",
+      },
+    },
     {
       resolve: `gatsby-source-cloudinary`,
       options: {
@@ -35,7 +29,7 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         maxResults: 1000,
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
