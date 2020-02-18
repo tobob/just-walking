@@ -1,30 +1,43 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link, graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import Gallery from 'react-grid-gallery';
-import cloudinary from 'cloudinary-core';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Gallery from "react-grid-gallery"
+import cloudinary from "cloudinary-core"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import Carousel, { Modal, ModalGateway } from "react-images"
 
-const cl = cloudinary.Cloudinary.new();
-cl.config("cloud_name", 'just-walking-me');
+const cl = cloudinary.Cloudinary.new()
+cl.config("cloud_name", "just-walking-me")
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
+  const [selectedImage, setSelectedImage] = useState(null)
+  const [modal, setModal] = useState(false)
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
-  const images = data.allCloudinaryMedia;
+  const images = data.allCloudinaryMedia
   const mappedImages = images.edges.map(({ node }) => {
-    const src = cl.url(node.public_id, { secure: true, effect: 'saturation:50', quality: 'auto:good', angle: 'exif', crop: 'limit', height: 1280 })
-    const thumbnail = cl.url(node.public_id, { secure: true, crop: 'thumb', effect: 'saturation:50', quality: 'auto:good' })
-    const { width, height } = node;
-    const prop = height / width;
-    const thumbHeight = prop > 1 ? 300 : 300 * prop;
-    const thumbWidth = prop > 1 ? 300 / prop : 300;
-
-    console.log(prop, thumbHeight, thumbWidth)
+    const src = cl.url(node.public_id, {
+      secure: true,
+      effect: "saturation:50",
+      quality: "auto:good",
+      angle: "exif",
+      crop: "limit",
+      height: 1280,
+    })
+    const thumbnail = cl.url(node.public_id, {
+      secure: true,
+      crop: "thumb",
+      effect: "saturation:50",
+      quality: "auto:good",
+    })
+    const { width, height } = node
+    const prop = height / width
+    const thumbHeight = prop > 1 ? 300 : 300 * prop
+    const thumbWidth = prop > 1 ? 300 / prop : 300
 
     return {
       src,
@@ -38,18 +51,27 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     }
   })
 
-  const mappedImagesAsComponents = mappedImages.map((image) => <LazyLoadImage
-    alt={image.alt}
-    height={image.thumbHeight}
-    effect="blur"
-    className="post-gallery__image"
-    wrapperClassName="post-gallery__image-wrapper"
-    src={image.thumbnail}
-    width={image.thumbWidth} />)
+  const imagesList = mappedImages.map(image => ({ src: image.src }))
 
-  const navigateToImage = (event) => {
-    window.open(`/photography/${event.currentTarget.alt}`, '_blank');
-    window.focus();
+  const mappedImagesAsComponents = mappedImages.map((image, index) => (
+    <LazyLoadImage
+      onClick={() => {
+        setSelectedImage(index)
+        setModal(true)
+      }}
+      alt={image.alt}
+      height={image.thumbHeight}
+      effect="blur"
+      className="post-gallery__image"
+      wrapperClassName="post-gallery__image-wrapper"
+      src={image.thumbnail}
+      width={image.thumbWidth}
+    />
+  ))
+
+  const navigateToImage = event => {
+    window.open(`/photography/${event.currentTarget.alt}`, "_blank")
+    window.focus()
   }
 
   return (
@@ -100,7 +122,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               {next && (
                 <Link to={next.fields.slug} rel="next">
                   {next.frontmatter.title} →
-              </Link>
+                </Link>
               )}
             </li>
           </ul>
@@ -114,8 +136,29 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <hr />
         {mappedImagesAsComponents}
         <div className="separator-40"></div>
-      </article>
+        <ModalGateway>
+          {modal ? (
+            <Modal onClose={() => setModal(false)}>
+              <Carousel
+                currentIndex={selectedImage}
+                views={imagesList}
+                frameProps={{ autoSize: "height" }}
+                styles={{
+                  view: base => ({
+                    ...base,
 
+                    "& > img": {
+                      display: "inline-block",
+                      marginBottom: "20px",
+                      marginTop: "20px",
+                    },
+                  }),
+                }}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
+      </article>
     </Layout>
   )
 }
@@ -139,7 +182,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allCloudinaryMedia(filter: {public_id: {regex: $slug}}, sort: {fields: created_at}) {
+    allCloudinaryMedia(
+      filter: { public_id: { regex: $slug } }
+      sort: { fields: created_at }
+    ) {
       edges {
         node {
           public_id
