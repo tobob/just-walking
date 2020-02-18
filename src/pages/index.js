@@ -22,9 +22,9 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(({ node }) => {
           const fileName = node.fields.slug.toString().replace(/\//g, "")
           const url = cl.url(fileName, {
-            width: 200,
+            width: 300,
             crop: "fill",
-            height: 300,
+            height: 400,
             secure: true,
           })
           const title = node.frontmatter.title || node.fields.slug
@@ -32,11 +32,11 @@ const BlogIndex = ({ data, location }) => {
           return (
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
               <div key={node.fields.slug} className="post">
-                <div className="post__overlay" />>
                 <div className="post__header">
                   <small>{node.frontmatter.date}</small>
                 </div>
                 <img src={url} />
+                <div className="post__overlay" />
                 <div className="post__title">
                   <span className="post__title-main">{title}</span>
                   {mnpm && (
