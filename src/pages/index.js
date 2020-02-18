@@ -3,12 +3,12 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import cloudinary from 'cloudinary-core';
+import cloudinary from "cloudinary-core"
 
-import '../assets/stylesheets/application.sass'
+import "../assets/stylesheets/application.sass"
 
-const cl = cloudinary.Cloudinary.new();
-cl.config("cloud_name", 'just-walking-me');
+const cl = cloudinary.Cloudinary.new()
+cl.config("cloud_name", "just-walking-me")
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -19,12 +19,16 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
 
       <div className="posts">
-
         {posts.map(({ node }) => {
-          const fileName = node.fields.slug.toString().replace(/\//g, '')
-          const url = cl.url(fileName, { width: 200, crop: "fill", height: 300, secure: true });
+          const fileName = node.fields.slug.toString().replace(/\//g, "")
+          const url = cl.url(fileName, {
+            width: 200,
+            crop: "fill",
+            height: 300,
+            secure: true,
+          })
           const title = node.frontmatter.title || node.fields.slug
-          const { mnpm } = node.frontmatter;
+          const { mnpm } = node.frontmatter
           return (
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
               <div key={node.fields.slug} className="post">
@@ -34,9 +38,10 @@ const BlogIndex = ({ data, location }) => {
                 </div>
                 <img src={url} />
                 <div className="post__title">
-
                   <span className="post__title-main">{title}</span>
-                  {mnpm && <span className="post__title-mnpm">{mnpm} mnpm</span>}
+                  {mnpm && (
+                    <span className="post__title-mnpm">{mnpm} mnpm</span>
+                  )}
                 </div>
               </div>
             </Link>
@@ -51,26 +56,26 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query {
-          site {
-        siteMetadata {
-          title
-        }
-        }
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC }) {
-          edges {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
         node {
           excerpt
           fields {
-          slug
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            mnpm
+          }
         }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        mnpm
       }
     }
   }
-}
-}
 `
