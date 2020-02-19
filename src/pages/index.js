@@ -22,9 +22,9 @@ const BlogIndex = ({ data, location }) => {
         {posts.map(({ node }) => {
           const fileName = node.fields.slug.toString().replace(/\//g, "")
           const url = cl.url(fileName, {
-            width: 300,
+            width: 330,
             crop: "fill",
-            height: 400,
+            height: 440,
             secure: true,
           })
           const title = node.frontmatter.title || node.fields.slug

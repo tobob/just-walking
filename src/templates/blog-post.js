@@ -7,6 +7,8 @@ import Gallery from "react-grid-gallery"
 import cloudinary from "cloudinary-core"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import Carousel, { Modal, ModalGateway } from "react-images"
+import ChevronLeft from '../assets/svg/ChevronLeft';
+import ChevronRight from '../assets/svg/ChevronRight';
 
 const cl = cloudinary.Cloudinary.new()
 cl.config("cloud_name", "just-walking-me")
@@ -32,8 +34,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       secure: true,
       crop: "thumb",
       effect: "saturation:50",
-      quality: "auto:good",
+      quality: "auto:eco",
+      width: 450,
     })
+
+
     const { width, height } = node
     const prop = height / width
     const thumbHeight = prop > 1 ? 300 : 300 * prop
@@ -80,85 +85,76 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article>
-        <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-        </header>
+      <nav className="subnav">
+        <ul>
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                <ChevronLeft /> {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} <ChevronRight />
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+      <div style={{ display: 'flex', padding: '20px' }}>
+        <article className="blogpost">
+          <header>
+            <h1
+              style={{
+                marginTop: rhythm(1),
+                marginBottom: 0,
+              }}
+            >
+              {post.frontmatter.title}
+            </h1>
+            <p
+              style={{
+                ...scale(-1 / 5),
+                display: `block`,
+                marginBottom: rhythm(1),
+              }}
+            >
+              {post.frontmatter.date}
+            </p>
+          </header>
 
-        <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <hr />
-        {mappedImagesAsComponents}
-        <div className="separator-40"></div>
-        <ModalGateway>
-          {modal ? (
-            <Modal onClose={() => setModal(false)}>
-              <Carousel
-                currentIndex={selectedImage}
-                views={imagesList}
-                frameProps={{ autoSize: "height" }}
-                styles={{
-                  view: base => ({
-                    ...base,
 
-                    "& > img": {
-                      display: "inline-block",
-                      marginBottom: "20px",
-                      marginTop: "20px",
-                    },
-                  }),
-                }}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
-      </article>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        </article>
+        <div className="gallery">
+          {mappedImagesAsComponents}
+          <div className="separator-40"></div>
+        </div>
+      </div>
+      <ModalGateway>
+        {modal ? (
+          <Modal onClose={() => setModal(false)}>
+            <Carousel
+              currentIndex={selectedImage}
+              views={imagesList}
+              frameProps={{ autoSize: "height" }}
+              styles={{
+                view: base => ({
+                  ...base,
+
+                  "& > img": {
+                    display: "inline-block",
+                    marginBottom: "20px",
+                    marginTop: "20px",
+                  },
+                }),
+              }}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 ---
-title: Jałowiec
+title: Jalowiec
 mnpm: 1113
 date: "2020-02-10"
 startingPoint: Hucisko

@@ -13,6 +13,18 @@
   height: 400px
   width: 300px
   position: relative
+  transition: all .2s ease-in-out
+
+  &:hover
+    transform: scale(1.02)
+
+    .post__overlay
+      opacity: 0
+
+    .post__title
+      height: 100px
+    .post__title-main
+      font-size: 30px
 
   img
     z-index: 0
@@ -35,6 +47,7 @@
       text-align: center
 
   &__overlay
+    transition: all .4s ease-in-out
     z-index: 1
     background: $color-gunmetal
     opacity: 0.3
@@ -43,8 +56,8 @@
     width: 100%
     position: absolute
 
-
   &__title
+    transition: all .5s ease-in-out
     text-align: center
     z-index: 2
     position: absolute
@@ -56,16 +69,15 @@
     justify-content: center
     align-items: center
 
-
-
     &-main
+      transition: all .5s ease-in-out
       flex: 1
       font-size: 24px
       font-weight: 600
       color: white
 
     &-mnpm
-      flex: 0
+      flex: 1
       font-size: 12px
       font-weight: 500
       opacity: 0.7
