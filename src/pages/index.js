@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
       <div className="posts">
         {posts.map(({ node }) => {
           const fileName = node.fields.slug.toString().replace(/\//g, "")
-          const url = cl.url(fileName, {
+          const url = cl.url(`${fileName}.jpg`, {
             width: 330,
             crop: "fill",
             height: 440,
