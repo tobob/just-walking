@@ -1,6 +1,54 @@
 article.blogpost
-  flex: 2
+  flex: 3
   padding-left: 26px
   padding-right: 20px
   header
+    margin-left: 20px
     color: white
+
+    h1::after
+      content: ''
+      display: inline-block
+      width: 120px
+      background: linear-gradient(45deg, rgba($color-gunmetal, 0.2) 30%, rgba($color-pale-green, 0.1) 75%)
+      height: 30px
+      transform: perspective(10px) rotateX(10deg)
+
+  .informations
+    border-bottom: 1px rgba($color-pale-green, 1) solid
+    background: linear-gradient(45deg, rgba($color-gunmetal, 0.2) 20%, rgba($color-pale-green, 0.1) 75%);
+    width: 100%
+    padding: 10px
+    margin-bottom: 10px
+
+    section
+      margin-bottom: 12px
+      margin-left: 10px
+      display: flex
+      flex-direction: row
+      position: relative
+
+      summary
+        color: $color-pale-green
+        opacity: 0.8
+        flex: 1
+
+      .asphalt
+        margin-right: 4px
+        margin-bottom: -3px
+
+      span, a
+        flex: 2
+        padding-left: 10px
+      a
+        box-shadow: none
+        text-decoration: none
+        color: white
+
+      .separator
+        width: calc(100% + 10px)
+        height: 2px
+        position: absolute
+        bottom: -9px
+        right: -10px
+        background: linear-gradient(45deg, rgba($color-jet, 1) 20%, rgba($color-gunmetal, 0.3) 75%);

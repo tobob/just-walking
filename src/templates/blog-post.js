@@ -9,6 +9,14 @@ import { LazyLoadImage } from "react-lazy-load-image-component"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import ChevronLeft from '../assets/svg/ChevronLeft';
 import ChevronRight from '../assets/svg/ChevronRight';
+import ExternalLink from '../assets/svg/ExternalLink';
+import MapPin from '../assets/svg/MapPin';
+import Map from '../assets/svg/Map';
+import Meh from '../assets/svg/Meh'
+import Award from '../assets/svg/Avard';
+import { times } from 'lodash'
+
+
 
 const cl = cloudinary.Cloudinary.new()
 cl.config("cloud_name", "just-walking-me")
@@ -17,6 +25,25 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const [selectedImage, setSelectedImage] = useState(null)
   const [modal, setModal] = useState(false)
   const post = data.markdownRemark
+  const {
+    asphalt,
+    country, //
+    difficulty,
+    distance, //
+    endTime,//
+    highestMountain, //
+    ferns,
+    finishPoint, //
+    mapaTurystyczna,
+    mnpm,//
+    mountainRange, //
+    mountains,//
+    parkingCords, //
+    startTime,//
+    startingPoint,//
+    type,//
+    wiki,//
+  } = post.frontmatter;
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
@@ -35,14 +62,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       crop: "thumb",
       effect: "saturation:50",
       quality: "auto:eco",
-      width: 450,
+      width: 150,
     })
-
 
     const { width, height } = node
     const prop = height / width
-    const thumbHeight = prop > 1 ? 300 : 300 * prop
-    const thumbWidth = prop > 1 ? 300 / prop : 300
+    const thumbHeight = prop > 1 ? 150 : 150 * prop
+    const thumbWidth = prop > 1 ? 150 / prop : 150
 
     return {
       src,
@@ -83,7 +109,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.type || post.excerpt}
       />
       <nav className="subnav">
         <ul>
@@ -118,13 +144,77 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               style={{
                 ...scale(-1 / 5),
                 display: `block`,
-                marginBottom: rhythm(1),
               }}
             >
               {post.frontmatter.date}
             </p>
-          </header>
 
+          </header>
+          <div className="informations">
+            <section>
+              <summary>country</summary>
+              <span>{country}</span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>mountainRange</summary>
+              <span>{mountainRange}</span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>highestMountain</summary>
+              <span>{highestMountain}
+                {wiki && <a href={wiki} target="_blank"><ExternalLink width={14} height={14} /></a>}
+              </span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>highestPoint</summary>
+              <span>{mnpm} mnpm</span>
+              <div className="separator"></div>
+            </section>
+            {mountains && <section>
+              <summary>visitedAlso</summary>
+              <span>{mountains.join(', ')}</span>
+              <div className="separator"></div>
+            </section>}
+            <section>
+              <summary>route <Map width={14} height={14} stroke={'white'} /></summary>
+              <a href={`https://${mapaTurystyczna}`} target="_blank">{mapaTurystyczna}{`   `}</a>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>startingPoint - finishPoint</summary>
+              <span>{startingPoint} - {finishPoint ? finishPoint : startingPoint}</span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>parkingCoords <MapPin width={14} height={14} stroke={'white'} /></summary>
+              <a href={`https://${parkingCords}`} target="_blank">{parkingCords}{`   `}</a>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>distance</summary>
+              <span>{distance}</span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>startTime - endTime</summary>
+              <span>{startTime} - {endTime}</span>
+              <div className="separator"></div>
+            </section>
+            <section>
+              <summary>howMuchAsphalt</summary>
+              <span>{times(asphalt, () => <Meh stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - asphalt, () => <Meh width={18} height={18} stroke="gray" className="asphalt" />)}</span>
+              <div className="separator"></div>
+            </section>
+
+            <section>
+              <summary>difficulty</summary>
+              <span>{times(difficulty, () => <Award stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - difficulty, () => <Award width={18} height={18} stroke="gray" className="asphalt" />)}</span>
+              <div className="separator"></div>
+            </section>
+          </div>
 
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
@@ -168,19 +258,36 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
+        type
+        asphalt
+        country
+        difficulty
+        distance
+        highestMountain
+        endTime
+        ferns
+        finishPoint
+        mapaTurystyczna
+        mnpm
+        mountainRange
+        mountains
+        parkingCords
+        startTime
+        startingPoint
+        type
+        wiki
       }
     }
     allCloudinaryMedia(
-      filter: { public_id: { regex: $slug } }
-      sort: { fields: created_at }
+      filter: {public_id: {regex: $slug } }
+      sort: {fields: created_at }
     ) {
       edges {
         node {
