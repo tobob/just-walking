@@ -26,7 +26,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const [modal, setModal] = useState(false)
   const post = data.markdownRemark
   const {
-    asphalt,
+    asphalt, //
     country, //
     difficulty,
     distance, //

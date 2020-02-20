@@ -4,7 +4,7 @@ mnpm: 1113
 date: "2020-02-10"
 startingPoint: Hucisko
 finishPoint: null
-parkingCords: https://goo.gl/maps/ueqdCfE5kXUXzTqX7
+parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7
 startTime: '9:00'
 endTime: '15:13'
 distance: 22km
@@ -12,11 +12,12 @@ mapaTurystyczna: mapa-turystyczna.pl/route/hwm
 difficulty: 3
 asphalt: 3
 mountainRange: Maków Beskids
-mountains: ['Jałowiec', 'Czerniawa Sucha']
+mountains: ['Czerniawa Sucha']
 ferns: null
-description: tour
+type: tour
 wiki: https://pl.wikipedia.org/wiki/Ja%C5%82owiec_(Pasmo_Ja%C5%82owieckie)
-country: null
+country: Poland
+highestMountain: Jałowiec
 ---
 
 Wow, this is the first post I ever create on this blog,
