@@ -5,10 +5,10 @@ type: post
 finishPoint: nice sample
 ---
 
--Maybe this is some kind of middle-age crisis?
--Maybe I need someplace on the Internet that is mine only?
--Maybe I need to gather somewhere all my trips and photos?
--Maybe I want to tell you a story about the mountains?
+- Maybe this is some kind of middle-age crisis?
+- Maybe I need someplace on the Internet that is mine only?
+- Maybe I need to gather somewhere all my trips and photos?
+- Maybe I want to tell you a story about the mountains?
 
 Duno
 
