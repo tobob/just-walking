@@ -1,22 +1,22 @@
 ---
-title: Kocierz, Kiczera
-mnpm: 873
-date: "2019-12-29"
-creationDate: '2020-02-20'
-startingPoint: Porąbka
-finishPoint: null
-parkingCords: goo.gl/maps/HVSSfoWgp6zgHH138
-distance: 23km
-mapaTurystyczna: mapa-turystyczna.pl/route/6c7v
-difficulty: 2
 asphalt: 1
+country: Poland
+creationDate: '2020-02-20'
+date: "2019-12-29"
+difficulty: 2
+distance: 23km
+ferns: null
+finishPoint: null
+highestMountain: Kocierz
+mapaTurystyczna: mapa-turystyczna.pl/route/6c7v
+mnpm: 873
 mountainRange: Little Beskids
 mountains: ['Trzonka', "Mała Bukowa", 'Beskid', 'Kiczera']
-ferns: null
+parkingCords: goo.gl/maps/HVSSfoWgp6zgHH138
+startingPoint: Porąbka
+title: Kocierz, Kiczera
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Kiczera_(Beskid_Ma%C5%82y)
-country: Poland
-highestMountain: Kocierz
 ---
 
 This time I'm starting from Porąbka, I leave a car on huge parking near the city hall.

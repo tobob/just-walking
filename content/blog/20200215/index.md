@@ -1,24 +1,24 @@
 ---
-title: Smrk
-mnpm: 1276
-date: "2020-02-15"
-creationDate: '2020-02-15'
-startingPoint: Ostrawica
-finishPoint: null
-parkingCords: goo.gl/maps/NHbKxZA1qhMnz3SUA
-startTime: '8:30'
-endTime: '14:30'
-distance: 18km
-mapaTurystyczna: mapa-turystyczna.pl/route/a1rs
-difficulty: 1
 asphalt: 3
+country: Czech
+creationDate: '2020-02-15'
+date: "2020-02-15"
+difficulty: 1
+distance: 18km
+endTime: '14:30'
+ferns: ['Daria', 'Kuba']
+finishPoint: null
+highestMountain: Smrk
+mapaTurystyczna: mapa-turystyczna.pl/route/a1rs
+mnpm: 1276
 mountainRange: Moravian-Silesian Beskids
 mountains: null
-ferns: ['Daria', 'Kuba']
+parkingCords: goo.gl/maps/NHbKxZA1qhMnz3SUA
+startTime: '8:30'
+startingPoint: Ostrawica
+title: Smrk
 type: tour
 wiki: https://en.wikipedia.org/wiki/Smrk_(Moravian-Silesian_Beskids)
-country: Czech
-highestMountain: Smrk
 ---
 
 This time Moravian-Silesian Beskids. I was at the highest peak there, Smrk is the 2nd one. Smrk is a very easy peak to reach. The most difficult was the amount of snow that was there.

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useMemo } from "react"
 import { Link, graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -105,30 +105,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     window.focus()
   }
 
-  return (
-    <Layout withoutHero withGoBack location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.type || post.excerpt}
-      />
-      <nav className="subnav">
-        <ul>
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                <ChevronLeft /> {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} <ChevronRight />
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+  const tourContent = useMemo(() => (
+    <>
       <div style={{ display: 'flex', padding: '20px' }}>
         <article className="blogpost">
           <header>
@@ -245,6 +223,34 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </Modal>
         ) : null}
       </ModalGateway>
+    </>
+  ))
+
+  return (
+    <Layout withoutHero withGoBack location={location} title={siteTitle}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.type || post.excerpt}
+      />
+      <nav className="subnav">
+        <ul>
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                <ChevronLeft /> {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} <ChevronRight />
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+      {tourContent}
     </Layout>
   )
 }

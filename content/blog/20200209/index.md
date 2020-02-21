@@ -1,24 +1,24 @@
 ---
-title: Jalowiec
-mnpm: 1113
-date: "2020-02-10"
-creationDate: "2020-02-12"
-startingPoint: Hucisko
-finishPoint: null
-parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7
-startTime: '9:00'
-endTime: '15:13'
-distance: 22km
-mapaTurystyczna: mapa-turystyczna.pl/route/hwm
-difficulty: 3
 asphalt: 3
+country: Poland
+creationDate: "2020-02-12"
+date: "2020-02-10"
+difficulty: 3
+distance: 22km
+endTime: '15:13'
+ferns: null
+finishPoint: null
+highestMountain: Jałowiec
+mapaTurystyczna: mapa-turystyczna.pl/route/hwm
+mnpm: 1113
 mountainRange: Maków Beskids
 mountains: ['Czerniawa Sucha']
-ferns: null
+parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7
+startTime: '9:00'
+startingPoint: Hucisko
+title: Jalowiec
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Ja%C5%82owiec_(Pasmo_Ja%C5%82owieckie)
-country: Poland
-highestMountain: Jałowiec
 ---
 
 Wow, this is the first post I ever create on this blog,
