@@ -105,6 +105,42 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     window.focus()
   }
 
+  const blogContent = useMemo(() => {
+    const imageScr = mappedImages[0].src;
+
+    return (<div style={{ display: 'flex', padding: '20px' }}>
+      <article className="blogpost">
+        <header>
+          <h1
+            style={{
+              marginTop: rhythm(1),
+              marginBottom: 0,
+            }}
+          >
+            {post.frontmatter.title}
+          </h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+        </header>
+        <section className="blogpost-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
+      <img
+        // alt={image.alt}
+        style={{ height: '100vh', width: '50vw', objectFit: 'cover' }}
+        effect="blur"
+        // className="post-gallery__image"
+        // wrapperClassName="post-gallery__image-wrapper"
+        src={imageScr}
+      />
+    </div>)
+  }, [])
+
   const tourContent = useMemo(() => (
     <>
       <div style={{ display: 'flex', padding: '20px' }}>
@@ -126,7 +162,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             >
               {post.frontmatter.date}
             </p>
-
           </header>
           <div className="informations">
             <section>
@@ -186,7 +221,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               <span>{times(asphalt, () => <Meh stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - asphalt, () => <Meh width={18} height={18} stroke="gray" className="asphalt" />)}</span>
               <div className="separator"></div>
             </section>
-
             <section>
               <summary>difficulty</summary>
               <span>{times(difficulty, () => <Award stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - difficulty, () => <Award width={18} height={18} stroke="gray" className="asphalt" />)}</span>
@@ -194,7 +228,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </section>
           </div>
 
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section className="blogpost-content" dangerouslySetInnerHTML={{ __html: post.html }} />
         </article>
         <div className="gallery">
           {mappedImagesAsComponents}
@@ -224,7 +258,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         ) : null}
       </ModalGateway>
     </>
-  ))
+  ), [])
 
   return (
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
@@ -250,7 +284,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-      {tourContent}
+      {type === 'tour' ? tourContent : blogContent}
     </Layout>
   )
 }

@@ -1,23 +1,27 @@
 ---
-asphalt: null
-country: null
 date: "2020-02-12"
-difficulty: null
-distance: null
-endTime: null
-ferns: null
-finishPoint: sample
-highestMountain: null
-mapaTurystyczna: null
-mnpm: null
-mountainRange: null
-mountains: null
-parkingCords: null
-startTime: null
-startingPoint: null
 title: Why I'm doing this
 type: post
-wiki: null
+finishPoint: nice sample
 ---
 
-FFS, do I realy need to do this? xD
+Maybe this is some kind of middle-age crisis?
+Maybe I need someplace on the Internet that is mine only?
+Maybe I need to gather somewhere all my trips and photos?
+Maybe I want to tell you a story about the mountains?
+
+Duno
+
+I know only that I want something like this, so that's why I did start something like this.
+
+You will probably ask why in English? (because I'm from Poland)
+I want to practice it and allow other non-polish people to read about Polish/Czech/Slovakia mountains.
+
+I have a lot of data I need to gather here, it will be a long process. So please be patient. My oldest photos come probably from April 2015, so till you don't see the post from April 2015 I'm probably still in progress.
+
+Additionally, I will improve everything during this journey.
+
+Who inspire me:
+- [Do Zobaczenia na Szlaku](https://www.facebook.com/dozobaczenianaszlaku/)
+- [W Szczytowej Formie](http://wszczytowejformie.pl/)
+- [Dzienniki Górskie](https://www.facebook.com/dziennikig)
