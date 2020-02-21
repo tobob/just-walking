@@ -21,7 +21,8 @@ I have a lot of data I need to gather here, it will be a long process. So please
 
 Additionally, I will improve everything during this journey.
 
-Who inspire me:
+Who/What inspire me to do this?
 - [Do Zobaczenia na Szlaku](https://www.facebook.com/dozobaczenianaszlaku/)
 - [W Szczytowej Formie](http://wszczytowejformie.pl/)
 - [Dzienniki Górskie](https://www.facebook.com/dziennikig)
+- I'm older than 30
