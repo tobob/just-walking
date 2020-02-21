@@ -105,7 +105,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     window.focus()
   }
 
-  const blogContent = useMemo(() => {
+  const blogContent = () => {
     const imageScr = mappedImages[0].src;
 
     return (<div style={{ display: 'flex', padding: '20px' }}>
@@ -131,17 +131,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <section className="blogpost-content" dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
       <img
-        // alt={image.alt}
-        style={{ height: '100vh', width: '50vw', objectFit: 'cover' }}
+        className="blogpost-hero"
         effect="blur"
-        // className="post-gallery__image"
-        // wrapperClassName="post-gallery__image-wrapper"
         src={imageScr}
       />
     </div>)
-  }, [])
+  }
 
-  const tourContent = useMemo(() => (
+  const tourContent = () => (
     <>
       <div style={{ display: 'flex', padding: '20px' }}>
         <article className="blogpost">
@@ -258,7 +255,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         ) : null}
       </ModalGateway>
     </>
-  ), [])
+  );
 
   return (
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
@@ -284,7 +281,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-      {type === 'tour' ? tourContent : blogContent}
+      {type === 'tour' ? tourContent() : blogContent()}
     </Layout>
   )
 }
