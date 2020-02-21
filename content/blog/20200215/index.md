@@ -2,6 +2,7 @@
 title: Smrk
 mnpm: 1276
 date: "2020-02-15"
+creationDate: '2020-02-15'
 startingPoint: Ostrawica
 finishPoint: null
 parkingCords: goo.gl/maps/NHbKxZA1qhMnz3SUA

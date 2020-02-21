@@ -2,6 +2,7 @@
 title: Jalowiec
 mnpm: 1113
 date: "2020-02-10"
+creationDate: "2020-02-12"
 startingPoint: Hucisko
 finishPoint: null
 parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7

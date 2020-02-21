@@ -2,6 +2,7 @@
 title: Kocierz, Kiczera
 mnpm: 873
 date: "2019-12-29"
+creationDate: '2020-02-20'
 startingPoint: Porąbka
 finishPoint: null
 parkingCords: goo.gl/maps/HVSSfoWgp6zgHH138
