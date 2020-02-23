@@ -10,6 +10,9 @@
   flex-wrap: wrap
   justify-content: space-around
 
+  +media-breakpoint-down(sm)
+    flex-direction: column
+
 .post
   margin-top: 10px
   margin-bottom: 10px
@@ -20,6 +23,13 @@
   width: 300px
   position: relative
   transition: all .2s ease-in-out
+
+  +media-breakpoint-down(sm)
+    height: 150px
+    flex: 1
+    background: red
+    width: auto
+    margin-top: 10px
 
   &:hover
     transform: scale(1.02)
@@ -38,6 +48,12 @@
     width: 300px
     position: absolute
     top: 0
+
+    +media-breakpoint-down(sm)
+      height: 150px
+      width: 100%
+      object-fit: cover
+
   &__header
     z-index: 2
     position: absolute
@@ -61,6 +77,9 @@
     bottom: 0
     width: 100%
     position: absolute
+
+    +media-breakpoint-down(sm)
+      opacity: 0
 
   &__title
     transition: all .5s ease-in-out
