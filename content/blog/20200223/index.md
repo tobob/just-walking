@@ -16,7 +16,7 @@ mountains: null
 parkingCords: goo.gl/maps/g6TAZD6MxfCv26qh7
 startTime: '9:00'
 startingPoint: Glinne, mountain pass
-title: Pilsko (from Gline)
+title: Pilsko (from Glinne)
 type: tour
 wiki: https://en.wikipedia.org/wiki/Pilsko
 ---
