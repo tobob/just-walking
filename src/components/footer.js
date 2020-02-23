@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import Instagram from '../assets/svg/Instagram';
 
 import { rhythm } from "../utils/typography"
 
@@ -39,6 +40,9 @@ const Footer = () => {
     >
       <div className="footer-separator"></div>
       <div className="footer-right">
+        <a href="https://www.instagram.com/justwalkingme/" target="_blank" className="instagram-icon">
+          <Instagram />
+        </a>
         <Image
           fixed={data.avatar.childImageSharp.fixed}
           alt={author}
