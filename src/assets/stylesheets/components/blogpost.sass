@@ -1,7 +1,36 @@
+.blogpost-page
+  flex-direction: row
+  display: flex
+  padding: 20px
+
+  +media-breakpoint-down(md)
+    flex-direction: column
+
+.simple-blogpost
+  display: flex
+  padding: 20px
+  flexDirection: row
+
+  +media-breakpoint-down(md)
+    flex-direction: column
+
+    .blogpost-hero
+      width: 100vw
+      object-fit: cover
+
 .blogpost
   flex: 3
   padding-left: 26px
   padding-right: 20px
+  color: rgba(white, 0.7)
+
+  ul, ol
+    margin-left: 1rem
+
+  +media-breakpoint-down(md)
+    font-size: 80%
+    padding-left: 0px
+    padding-right: 0px
 
   &-hero
     height: 100vh
@@ -11,17 +40,23 @@
   .blogpost-content
     padding: 20px
 
+    +media-breakpoint-down(md)
+      padding: 10px 0
+
   header
     margin-left: 20px
     color: white
 
-    h1::after
-      content: ''
-      display: inline-block
-      width: 120px
-      background: linear-gradient(45deg, rgba($color-gunmetal, 0.2) 30%, rgba($color-pale-green, 0.1) 75%)
-      height: 30px
-      transform: perspective(10px) rotateX(10deg)
+    +media-breakpoint-down(md)
+      margin-left: 0
+
+    h1
+      margin-bottom: 0
+      margin-top: 1rem
+
+    +media-breakpoint-down(md)
+      h1
+        margin-top: 0
 
   .informations
     border-bottom: 1px rgba($color-pale-green, 1) solid
@@ -36,6 +71,9 @@
       display: flex
       flex-direction: row
       position: relative
+
+      +media-breakpoint-down(md)
+        margin-left: 0
 
       summary
         color: $color-pale-green
@@ -53,6 +91,10 @@
         box-shadow: none
         text-decoration: none
         color: white
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
 
       .separator
         width: calc(100% + 10px)

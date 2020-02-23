@@ -108,15 +108,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const blogContent = () => {
     const imageScr = mappedImages[0].src;
 
-    return (<div style={{ display: 'flex', padding: '20px' }}>
+    return (<div className="simple-blogpost">
       <article className="blogpost">
         <header>
-          <h1
-            style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
-            }}
-          >
+          <h1>
             {post.frontmatter.title}
           </h1>
           <p
@@ -140,15 +135,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   const tourContent = () => (
     <>
-      <div style={{ display: 'flex', padding: '20px' }}>
+      <div className="blogpost-page">
         <article className="blogpost">
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
+            <h1>
               {post.frontmatter.title}
             </h1>
             <p
