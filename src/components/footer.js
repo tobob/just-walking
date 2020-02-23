@@ -55,10 +55,10 @@ const Footer = () => {
           }}
         />
         <div className="footer-right__text">
-          <span>Written by <span style={{ fontWeight: '600', color: 'white' }}>{author}</span></span>
+          <span>Written by <span style={{ fontWeight: '600', color: 'white' }}><a className="email-link" href="mailto:bozek.wojciech@gmail.com">{author}</a></span></span>
           <span>
             © {new Date().getFullYear()}, Built with {' '}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a className="g-link" href="https://www.gatsbyjs.org">Gatsby</a>
           </span>
         </div>
       </div>
