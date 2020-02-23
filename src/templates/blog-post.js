@@ -163,7 +163,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <div className="informations">
             <section>
               <summary>country</summary>
-              <span>{country}</span>
+              <span>{country.join(', ')}</span>
               <div className="separator"></div>
             </section>
             <section>
@@ -205,7 +205,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </section>
             <section>
               <summary>distance</summary>
-              <span>{distance}</span>
+              <span>{distance} km</span>
               <div className="separator"></div>
             </section>
             <section>

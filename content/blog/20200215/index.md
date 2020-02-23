@@ -1,10 +1,10 @@
 ---
 asphalt: 3
-country: Czech
+country: ['Czech Republic']
 creationDate: '2020-02-15'
 date: "2020-02-15"
 difficulty: 1
-distance: 18km
+distance: 18
 endTime: '14:30'
 ferns: ['Daria', 'Kuba']
 finishPoint: null

@@ -1,10 +1,10 @@
 ---
 asphalt: 1
-country: Poland
+country: ['Poland']
 creationDate: '2020-02-20'
 date: "2019-12-29"
 difficulty: 2
-distance: 23km
+distance: 23
 ferns: null
 finishPoint: null
 highestMountain: Kocierz

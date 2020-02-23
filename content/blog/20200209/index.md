@@ -1,10 +1,10 @@
 ---
 asphalt: 3
-country: Poland
+country: ['Poland']
 creationDate: "2020-02-12"
 date: "2020-02-10"
 difficulty: 3
-distance: 22km
+distance: 22
 endTime: '15:13'
 ferns: null
 finishPoint: null
