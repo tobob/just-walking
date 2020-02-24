@@ -16,7 +16,7 @@ mountains: ['Czerniawa Sucha']
 parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7
 startTime: '9:00'
 startingPoint: Hucisko
-title: Jalowiec
+title: Jałowiec
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Ja%C5%82owiec_(Pasmo_Ja%C5%82owieckie)
 ---
