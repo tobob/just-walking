@@ -26,4 +26,4 @@ Who/What inspire me to do this?
 - [W Szczytowej Formie](http://wszczytowejformie.pl/)
 - [Dzienniki Górskie](https://www.facebook.com/dziennikig)
 - I'm older than 30
-- it is better than a mindless game in League of Legends
+- it is better than a mindless game in League of Legends (or Carcassonne)
