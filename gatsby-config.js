@@ -16,11 +16,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-cookiehub`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        cookihubId: `3823bce7`,
         trackingId: "UA-158660622-1",
         anonymize: true,
+        respectDNT: true,
+        head: true,
       },
     },
     {

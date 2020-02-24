@@ -53,16 +53,31 @@ const Layout = ({ location, title, children, withoutHero = false, withGoBack = f
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    >
-      {withoutHero ? <SimpleNav withGoBack={withGoBack} /> : <Hero />}
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+                  var cpm = {};
+                  (function(h,u,b){
+                  var d=h.getElementsByTagName("script")[0],e=h.createElement("script");
+                  e.async=true;e.src='https://cookiehub.net/c2/3823bce7.js';
+                  e.onload=function(){u.cookiehub.load(b);}
+                  d.parentNode.insertBefore(e,d);
+                  })(document,window,cpm);
+            `,
+        }}
+      />
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+        }}
+      >
+        {withoutHero ? <SimpleNav withGoBack={withGoBack} /> : <Hero />}
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </>
   )
 }
 
