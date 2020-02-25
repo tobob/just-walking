@@ -4,12 +4,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Just Walking Me",
+    title: "just-walking.me",
     author: `bob`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `This is a simple mountain journal, for now, I will just gather all my data in one place. Paths, days, photos. But probably I will start making something more. There should be a guide for any foreign person that wants to check Polish, Czech or Slovakia mountains, especially Beskids. But I will also post here other mountain places.`,
     siteUrl: "https://just-walking.me",
     social: {
       twitter: `bozek.wojciech`,
+      instagram: 'justwalkingme'
     },
     viewport: "width=device-width, initial-scale=1.0, maximum-scale=2.0",
   },

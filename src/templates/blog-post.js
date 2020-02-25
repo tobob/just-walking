@@ -251,7 +251,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.type || post.excerpt}
+        description={post.frontmatter.mountainRange || post.excerpt}
       />
       <nav className="subnav">
         <ul>
