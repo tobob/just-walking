@@ -1,5 +1,5 @@
 ---
-asphalt: 4
+asphalt: 3
 country: ['Poland', 'Slovakia']
 creationDate: '2020-02-25'
 date: "2019-11-11"
@@ -19,7 +19,7 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Krawc%C3%B3w_Wierch
 ---
 
-11 October is a Polish national holiday. So let's spend them in a place where we can have some snow and eat some vegetarian soup in a shelter, actually mountain hut (bacówka).
+11 November is a Polish national holiday. So let's spend them in a place where we can have some snow and eat some vegetarian soup in a shelter, actually mountain hut (bacówka).
 
 The weather was great! So much snow, while in my village was none. However under this snow was lots of water, so my boots don't like it.
 
