@@ -21,7 +21,7 @@ type: tour
 wiki: https://en.wikipedia.org/wiki/Pilsko
 ---
 
-Fast trip. I did start on a Glinne pass. I remember a time then this place was alife. It was before Europen countries create [Schengen](https://en.wikipedia.org/wiki/Schengen_Area).
+Fast trip. I did start on a Glinne pass. I remember a time then this place was alife. It was before Polish borders open due to [Schengen](https://en.wikipedia.org/wiki/Schengen_Area) regulations.
 
 I did leave my car near a small shop that sells traditional polish cheeses.
 
