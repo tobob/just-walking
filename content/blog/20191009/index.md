@@ -32,6 +32,10 @@ We did buy tickets from Fly Dubai, with a stopover in Dubai.
 The flight was from Cracow.
 It cost about 2600zł - about 655$ - round trip flight.
 
+### Path choose
+
+There are a few paths that you can use to reach Kili. We, however, choose one of the longest to increase time for hight adaptation. Lemosho Route.
+
 ### Travel agency
 
 Yes, we thought that we will be searching for one after arrive. But 2 weeks before the flight we decided to book already someone. And I think that this is a good idea. Because in most cases such as travel agency book hotels and take care of transportation from the airport.
