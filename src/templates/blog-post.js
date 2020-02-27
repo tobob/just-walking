@@ -34,6 +34,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     highestMountain, //
     ferns,
     finishPoint, //
+    map,
     mapaTurystyczna,
     mnpm,//
     mountainRange, //
@@ -151,28 +152,28 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </p>
           </header>
           <div className="informations">
-            <section>
+            {country && <section>
               <summary>country</summary>
               <span>{country.join(', ')}</span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {mountainRange && <section>
               <summary>mountainRange</summary>
               <span>{mountainRange}</span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {highestMountain && <section>
               <summary>highestMountain</summary>
               <span>{highestMountain}
                 {wiki && <a href={wiki} target="_blank"><ExternalLink width={14} height={14} /></a>}
               </span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {mnpm && <section>
               <summary>highestPoint</summary>
               <span>{mnpm} mnpm</span>
               <div className="separator"></div>
-            </section>
+            </section>}
             {mountains && <section>
               <summary>visitedAlso</summary>
               <span>{mountains.join(', ')}</span>
@@ -180,34 +181,34 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </section>}
             <section>
               <summary>route <Map width={14} height={14} stroke={'white'} /></summary>
-              <a href={`https://${mapaTurystyczna}`} target="_blank">{mapaTurystyczna}{`   `}</a>
+              <a href={`https://${mapaTurystyczna || map}`} target="_blank">{mapaTurystyczna || map}{`   `}</a>
               <div className="separator"></div>
             </section>
-            <section>
+            {(startingPoint) && <section>
               <summary>startingPoint - finishPoint</summary>
               <span>{startingPoint} - {finishPoint ? finishPoint : startingPoint}</span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {parkingCords && <section>
               <summary>parkingCoords <MapPin width={14} height={14} stroke={'white'} /></summary>
               <a href={`https://${parkingCords}`} target="_blank">{parkingCords}{`   `}</a>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {distance && <section>
               <summary>distance</summary>
               <span>{distance} km</span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {startTime && endTime && <section>
               <summary>startTime - endTime</summary>
               <span>{startTime} - {endTime}</span>
               <div className="separator"></div>
-            </section>
-            <section>
+            </section>}
+            {(asphalt || asphalt === 0) && <section>
               <summary>howMuchAsphalt</summary>
               <span>{times(asphalt, () => <Meh stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - asphalt, () => <Meh width={18} height={18} stroke="gray" className="asphalt" />)}</span>
               <div className="separator"></div>
-            </section>
+            </section>}
             <section>
               <summary>difficulty</summary>
               <span>{times(difficulty, () => <Award stroke="white" width={18} height={18} className="asphalt" />)}{times(5 - difficulty, () => <Award width={18} height={18} stroke="gray" className="asphalt" />)}</span>
@@ -301,6 +302,7 @@ export const pageQuery = graphql`
         endTime
         ferns
         finishPoint
+        map
         mapaTurystyczna
         mnpm
         mountainRange

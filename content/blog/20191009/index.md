@@ -39,7 +39,7 @@ There are a few paths that you can use to reach Kili. We, however, choose one of
 ### Travel agency
 
 Yes, we thought that we will be searching for one after arrive. But 2 weeks before the flight we decided to book already someone. And I think that this is a good idea. Because in most cases such as travel agency book hotels and take care of transportation from the airport.
-We were searching for such agency on TripAdvisor and GoogleMaps. After email communication and compartment of some offers, we decide to take an offer from [Step to Kili](http://www.steptokili.com/). It was a very good choice.
+We were searching for such agency on TripAdvisor and GoogleMaps. After email communication and compartment of some offers, we decide to take an offer from [Step to Kili](http://www.steptokili.com/). It was a very good choice. They offer 7 day Lemosho Route trip, and we agree.
 
 ### Tacking
 
