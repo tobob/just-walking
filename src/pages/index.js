@@ -26,6 +26,7 @@ const BlogIndex = ({ data, location }) => {
             crop: "fill",
             height: 440,
             secure: true,
+            effect: "saturation:40",
           })
           const title = node.frontmatter.title || node.fields.slug
           const { mnpm } = node.frontmatter
