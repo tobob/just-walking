@@ -5,6 +5,40 @@
   overflow: hidden
   background-position: center
   background-repeat: no-repeat
+  background: white
+
+  &-background
+    width: 100%
+    height: 100vh
+    position: absolute
+    left: 0
+    background-size: cover
+    top: 0
+    background-position: center
+    background-repeat: no-repeat
+    z-index: 9
+    transform: translate3d(0,0,-1px) scale(2);
+    backface-visibility: hidden;
+
+    +media-breakpoint-down(md)
+      height: 50vh
+      top: -25vh
+
+  &-first
+    width: 100%
+    height: 100vh
+    position: absolute
+    background-size: cover
+    left: 0
+    top: 0
+    background-position: center
+    background-repeat: no-repeat
+    opacity: 1
+    z-index: 10
+
+    +media-breakpoint-down(md)
+      height: 50vh
+
 
   +media-breakpoint-down(md)
     height: 50vh
@@ -13,6 +47,7 @@
     position: absolute
     bottom: 40px
     right: 60px
+    z-index: 11
 
     h1
       color: white

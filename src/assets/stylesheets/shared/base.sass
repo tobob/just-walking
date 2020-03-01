@@ -9,6 +9,21 @@ body
     size: $font-size-base
   line-height: $line-height-base
 
+.parallax__stage
+    height: 100vh
+    left: 0
+    overflow: auto
+    position: absolute
+    top: 0
+    width: 100%
+    perspective: 1
+
+    main
+      background: rgba(0,0,0,0.8);
+      min-height: 100vh; // to make up for the lack of content
+      position: relative;
+      width: 100%;
+
 b,
 strong
   font-weight: $font-weight-bold

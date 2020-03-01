@@ -53,12 +53,7 @@ const Layout = ({ location, title, children, withoutHero = false, withGoBack = f
     )
   }
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-      }}
-    >
+    <div className="parallax__stage">
       {withoutHero ? <SimpleNav withGoBack={withGoBack} /> : <Hero />}
       <main>{children}</main>
       <Footer />
