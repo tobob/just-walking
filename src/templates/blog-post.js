@@ -229,7 +229,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <Carousel
               currentIndex={selectedImage}
               views={imagesList}
-              frameProps={{ autoSize: "height" }}
               styles={{
                 view: base => ({
                   ...base,

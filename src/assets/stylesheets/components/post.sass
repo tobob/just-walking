@@ -34,15 +34,16 @@
     margin-top: 10px
 
   &:hover
-    transform: scale(1.02)
+    +media-breakpoint-up(sm)
+      transform: scale(1.02)
 
-    .post__overlay
-      opacity: 0
+      .post__overlay
+        opacity: 0
 
-    .post__title
-      height: 100px
-    .post__title-main
-      font-size: 30px
+      .post__title
+        height: 100px
+      .post__title-main
+        font-size: 30px
 
   img
     z-index: 0
