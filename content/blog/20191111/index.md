@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Krawców Wierch
 mapaTurystyczna: mapa-turystyczna.pl/route/az87
 mnpm: 884
-mountainRange: Żywiec Beskids
+mountainRange: ['Żywiec Beskids']
 mountains: ['Bory Orawskie, mountain pass']
 parkingCords: goo.gl/maps/24yM5pa9LSGyi1Mv9
 startingPoint: Złatna Huta

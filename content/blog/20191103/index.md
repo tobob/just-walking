@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Groniczek
 mapaTurystyczna: mapa-turystyczna.pl/route/aryc
 mnpm: 839
-mountainRange: Little Beskids
+mountainRange: ['Little Beskids']
 mountains: ['Gaiki', 'Groniczek']
 parkingCords: goo.gl/maps/9xxgDmeG2Ew5DdKA6
 startingPoint: Bielsko-Biała, Lipnik

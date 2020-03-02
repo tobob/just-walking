@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Kocierz
 mapaTurystyczna: mapa-turystyczna.pl/route/6c7v
 mnpm: 873
-mountainRange: Little Beskids
+mountainRange: ['Little Beskids']
 mountains: ['Trzonka', "Mała Bukowa", 'Beskid', 'Kiczera']
 parkingCords: goo.gl/maps/HVSSfoWgp6zgHH138
 startingPoint: Porąbka

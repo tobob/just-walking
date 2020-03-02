@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Cuberniok
 mapaTurystyczna: mapa-turystyczna.pl/route/az8g
 mnpm: 909
-mountainRange: Silesian Beskids
+mountainRange: ['Silesian Beskids']
 mountains: ['Cuberniok', 'Szyndzielnia']
 parkingCords: goo.gl/maps/XEv3Fj472hvEeVRT6
 startingPoint: Bielsko-Biała, Wapiennica

@@ -17,7 +17,6 @@ import Award from '../assets/svg/Avard';
 import { times } from 'lodash'
 
 
-
 const cl = cloudinary.Cloudinary.new()
 cl.config("cloud_name", "just-walking-me")
 
@@ -159,7 +158,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </section>}
             {mountainRange && <section>
               <summary>mountainRange</summary>
-              <span>{mountainRange}</span>
+              <span>{mountainRange.join(', ')}</span>
               <div className="separator"></div>
             </section>}
             {highestMountain && <section>
@@ -251,7 +250,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.mountainRange || post.excerpt}
+        description={post.frontmatter.mountainRange && post.frontmatter.mountainRange.join(', ') || post.excerpt}
       />
       <nav className="subnav">
         <ul>

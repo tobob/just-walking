@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Równica
 mapaTurystyczna: mapa-turystyczna.pl/route/azxc
 mnpm: 884
-mountainRange: Silesian Beskids
+mountainRange: ['Silesian Beskids']
 mountains: null
 parkingCords: goo.gl/maps/UrgTWNLdsUhHH2y76
 startingPoint: Ustroń Zdrój

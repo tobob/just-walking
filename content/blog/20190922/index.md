@@ -10,7 +10,7 @@ finishPoint: null
 highestMountain: Rycerzowa Wielka
 mapaTurystyczna: mapa-turystyczna.pl/route/rzz4
 mnpm: 1226
-mountainRange: Żywiec Beskids
+mountainRange: ['Żywiec Beskids']
 mountains: null
 parkingCords: goo.gl/maps/XetCer7LTYKFuVUs5
 startingPoint: Rycerka

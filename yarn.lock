@@ -12807,6 +12807,11 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
+svg-mountain-range@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/svg-mountain-range/-/svg-mountain-range-1.0.3.tgz#7c2451469caaa901f84428bf567a530fc3cba731"
+  integrity sha1-fCRRRpyqqQH4RCi/VnpTD8PLpzE=
+
 svgo@1.3.2, svgo@^1.0.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"

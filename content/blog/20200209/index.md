@@ -11,7 +11,7 @@ finishPoint: null
 highestMountain: Jałowiec
 mapaTurystyczna: mapa-turystyczna.pl/route/hwm
 mnpm: 1113
-mountainRange: Maków Beskids
+mountainRange: ['Maków Beskids']
 mountains: ['Czerniawa Sucha']
 parkingCords: goo.gl/maps/ueqdCfE5kXUXzTqX7
 startTime: '9:00'

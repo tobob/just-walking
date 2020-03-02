@@ -11,7 +11,7 @@ finishPoint: null
 highestMountain: Smrk
 mapaTurystyczna: mapa-turystyczna.pl/route/a1rs
 mnpm: 1276
-mountainRange: Moravian-Silesian Beskids
+mountainRange: ['Moravian-Silesian Beskids']
 mountains: null
 parkingCords: goo.gl/maps/NHbKxZA1qhMnz3SUA
 startTime: '8:30'

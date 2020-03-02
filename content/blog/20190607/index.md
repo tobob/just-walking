@@ -1,0 +1,41 @@
+---
+daysDurration: 3
+asphalt: 2
+country: ['Poland']
+creationDate: '2020-03-02'
+date: "2019-06-07"
+difficulty: 5
+distance: 62
+ferns: ['Radek', 'Mateusz', 'Maciek']
+finishPoint: Konina
+highestMountain: Turbacz
+mapaTurystyczna: mapa-turystyczna.pl/route/mjsw
+mnpm: 1310
+mountainRange: ['Gorce Mountains', 'Island Beskids']
+mountains: ['Lubogosz', 'Ćwilin', 'Śnieżnica', 'Mogielica', 'Jasień', 'Kudłoń']
+parkingCords: goo.gl/maps/iWw7jZSC8LotKYYS6
+startingPoint: Mszana Dolna
+title: Chłosta Beskidzka VI
+type: tour
+wiki: https://en.wikipedia.org/wiki/Turbacz
+---
+
+This time not a single trip. Now together with 3 other people!
+However, the trip is more challenging. This is the 6th edition of Chłosta Beskidzka, that in simple translation means Beskid Flogging.
+
+We did start Friday at 8 pm from Mszana Dolna. There are some not good photos from the first hours, when we are climbing Lubogoszcz while doing this it is already dark. Then we go down to Kasina Wielka. The next big mountain is a Śnieżnica then again we go down. We make a stop near some closed Restaurant and then Ćwilin, brother of Śnieżnica.
+Then again we go down and in Jurków the sun starts rising.
+We decide that we will take a 2hour nap on the top of Mogielica. Climbing on Mogielica is exhausting. However, we did it and this is a time for a power nap.
+
+After a short rest, we are going down again. We are passing very near Polana Wały - a tent student's base. We reach Jesień. Morale in our crew is low. When we are in Rzeki two of us decide to quit. They go on a bus stop.
+
+So we leave them and we are started last climbing to Turbacz, originally 6th Chłosta Beskidzka finish was at Stare Wierchy, but we decide to sleep on Turbacz (we make such decision before starting). We did a half-hour nap between Rzeki and Turbacz. Funny is that no one passes us when we were taking this nap.
+
+We are at the shelter at about 6 pm. Ready do eat something hot.
+After a magnificent night inside a tent, we need to go back to the car that we left in Konina. But this time it is only going down.
+
+I think that was the hardest Chłosta ever. Probably we will be able to reach the end, but we will be there at about 9 pm. Not worth.
+
+[This is original route of Chłosta Beskidzka](https://mapa-turystyczna.pl/route/5b2k)
+
+Yea, I know, photos are awefull.

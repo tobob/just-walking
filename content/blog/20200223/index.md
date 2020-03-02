@@ -11,7 +11,7 @@ finishPoint: null
 highestMountain: Pilsko
 mapaTurystyczna: mapa-turystyczna.pl/route/rxek
 mnpm: 1557
-mountainRange: Żywiec Beskids
+mountainRange: ['Żywiec Beskids']
 mountains: null
 parkingCords: goo.gl/maps/g6TAZD6MxfCv26qh7
 startTime: '9:00'

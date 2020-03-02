@@ -11,7 +11,7 @@ finishPoint: null
 highestMountain: Skrzyczne
 mapaTurystyczna: mapa-turystyczna.pl/route/egq
 mnpm: 1257
-mountainRange: Silesian Beskids
+mountainRange: ['Silesian Beskids']
 mountains: ['Skrzyczne', 'Malinowska Skala']
 parkingCords: goo.gl/maps/mPHWfUvkuN6PQgzk7
 startTime: null
