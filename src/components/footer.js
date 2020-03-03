@@ -38,7 +38,6 @@ const Footer = () => {
     <footer
       className="footer"
     >
-      <div className="footer-separator"></div>
       <div className="footer-right">
         <a href="https://www.instagram.com/justwalkingme/" target="_blank" className="instagram-icon">
           <Instagram />
@@ -62,6 +61,8 @@ const Footer = () => {
           </span>
         </div>
       </div>
+      <div className="footer-first-bg" />
+      <div className="footer-third-bg" />
     </footer>
   )
 }
