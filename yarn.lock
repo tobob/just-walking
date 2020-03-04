@@ -5926,10 +5926,9 @@ gatsby-remark-smartypants@^2.1.20:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-cloudinary@^0.1.11:
+gatsby-source-cloudinary@tobob/gatsby-source-cloudinary#master:
   version "0.1.11"
-  resolved "https://registry.yarnpkg.com/gatsby-source-cloudinary/-/gatsby-source-cloudinary-0.1.11.tgz#cac34ca31625a6ef2a141c602d274f662291fac1"
-  integrity sha512-TWy8+CmdmfC3qxqUzWXVGknWD49dn8lLxtzPua0ug/HDDpGcgk86/2ly/pDbCPVBOKptjHIalnGOw6PkQPdWqA==
+  resolved "https://codeload.github.com/tobob/gatsby-source-cloudinary/tar.gz/b8d8706568b83b3ce9b9e99ccfdb9bbfcf5f3408"
   dependencies:
     cloudinary "^1.11.0"
     lodash.snakecase "^4.1.1"
