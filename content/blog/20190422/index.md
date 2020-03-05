@@ -14,7 +14,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Hala Lipowska', 'Hala Redykalna']
 parkingCords: goo.gl/maps/DXU6MRBNqNZqKwpb8
 startingPoint: Żabnica, Skałka
-title: Rysianka Hall, crocuses
+title: Rysianka Hall, crocuses and snowdrops
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Hala_Lipowska
 ---
