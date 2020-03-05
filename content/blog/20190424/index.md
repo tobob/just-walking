@@ -4,11 +4,11 @@ country: ['Poland', 'Czech']
 creationDate: '2020-03-04'
 date: "2019-04-24"
 difficulty: 5
-distance: 46
+distance: 44
 ferns: ['Radek','Greg']
 finishPoint: Bielsko-Biała, Dębowiec
 highestMountain: Trzy Kopce
-mapaTurystyczna: mapa-turystyczna.pl/route/awkc
+mapaTurystyczna: mapa-turystyczna.pl/route/awo9
 mnpm: 1070
 mountainRange: ['Silesian Beskids']
 mountains: ['Czantoria Mała', 'Równica', 'Błatnia', 'Szyndzielnia']
