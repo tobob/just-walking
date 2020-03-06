@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import cloudinary from "cloudinary-core"
-import Isotope from "isotope-layout/js/isotope";
 import classNames from 'classnames';
 
 import "../assets/stylesheets/application.sass"
@@ -19,19 +18,23 @@ const BlogIndex = ({ data, location }) => {
   const [sortingType, setSortingType] = useState(null);
 
   useEffect(() => {
-    iso.current = new Isotope(`.posts`, {
-      itemSelector: `.single-post`,
-      layoutMode: "masonry",
-      masonry: {
-        columnWidth: 330,
-        fitWidth: true,
-      },
-      getSortData: {
-        creationdate: '[date-creation]', // value of attribute
-      },
-      // sortBy: 'creationdate',
-      sortAscending: false,
-    });
+    if (typeof window !== `undefined`) {
+      // import Isotope API
+      const Isotope = require("isotope-layout/js/isotope");
+      iso.current = new Isotope(`.posts`, {
+        itemSelector: `.single-post`,
+        layoutMode: "masonry",
+        masonry: {
+          columnWidth: 330,
+          fitWidth: true,
+        },
+        getSortData: {
+          creationdate: '[date-creation]', // value of attribute
+        },
+        // sortBy: 'creationdate',
+        sortAscending: false,
+      });
+    }
   }, [])
 
   const setSorting = type => {
