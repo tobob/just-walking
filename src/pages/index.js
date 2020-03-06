@@ -24,13 +24,11 @@ const BlogIndex = ({ data, location }) => {
         itemSelector: `.single-post`,
         layoutMode: "masonry",
         masonry: {
-          columnWidth: 330,
-          fitWidth: true,
+          fitWidth: true
         },
         getSortData: {
           creationdate: '[date-creation]', // value of attribute
         },
-        // sortBy: 'creationdate',
         sortAscending: false,
       });
     }
