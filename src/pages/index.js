@@ -19,7 +19,6 @@ const BlogIndex = ({ data, location }) => {
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      // import Isotope API
       const Isotope = require("isotope-layout/js/isotope");
       iso.current = new Isotope(`.posts`, {
         itemSelector: `.single-post`,
