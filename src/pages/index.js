@@ -1,10 +1,11 @@
-import React, { useEffect, useRef } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import cloudinary from "cloudinary-core"
 import Isotope from "isotope-layout/js/isotope";
+import classNames from 'classnames';
 
 import "../assets/stylesheets/application.sass"
 
@@ -15,6 +16,7 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   const iso = useRef()
+  const [sortingType, setSortingType] = useState(null);
 
   useEffect(() => {
     iso.current = new Isotope(`.posts`, {
@@ -32,11 +34,19 @@ const BlogIndex = ({ data, location }) => {
     });
   }, [])
 
+  const setSorting = type => {
+    setSortingType(type);
+    iso.current.arrange({ sortBy: type })
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
+      <div className="filters">
+        <span onClick={() => setSorting(null)} className={classNames('filter', { 'filter--active': !sortingType })}>Sort by trip date</span>
+        <span onClick={() => setSorting('creationdate')} className={classNames('filter', { 'filter--active': sortingType === 'creationdate' })}>Sort by creation date</span>
+      </div>
       <div className="posts-wrapper">
-
         <div className="posts">
           {posts.map(({ node }) => {
             const fileName = node.fields.slug.toString().replace(/\//g, "")
