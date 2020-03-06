@@ -29,7 +29,7 @@ The trip on Śnieżnik was very peaceful and easy. However, I can add a label mi
 ### Now some personal shit, you don't need to read this
 
 There are so many things I want to do and words I want to say. But they won't probably change anything.
-The decision has been made.
+The decision has been made (not by me).
 I thought that I'm a strong, wise man. I was nothing but an idiot, naive idiot.
 
 But we should be going forward? Right?
