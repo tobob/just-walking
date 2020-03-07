@@ -12,7 +12,7 @@ mapaTurystyczna: mapa-turystyczna.pl/route/amzb
 mnpm: 930
 mountainRange: ['Little Beskids']
 mountains: ['Magurka Wilkowicka']
-parkingCords: goo.gl/maps/27ow5saJ8TuQmMbe6
+parkingCords: goo.gl/maps/EPBB195YNHUFJwDP8
 startingPoint: Wilkowice
 title: Czupel + Magurka
 type: tour
