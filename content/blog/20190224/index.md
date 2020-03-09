@@ -7,7 +7,7 @@ difficulty: 2
 distance: 17.1
 ferns: ['Daria', 'Kuba', 'Filip']
 finishPoint: Kamesznica Dolna
-highestMountain: Szyndzielnia, shelter
+highestMountain: Barania Góra
 mapaTurystyczna: mapa-turystyczna.pl/route/rnsy
 mnpm: 1220
 mountainRange: ['Silesian Beskids']

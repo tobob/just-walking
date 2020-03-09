@@ -35,6 +35,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     finishPoint, //
     map,
     mapaTurystyczna,
+    creationDate, //
     mnpm,//
     mountainRange, //
     mountains,//
@@ -216,6 +217,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </div>
 
           <section className="blogpost-content" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <footer className="date-footer">
+            <hr />
+            <span>created at {creationDate}</span>
+          </footer>
         </article>
         <div className="gallery">
           {mappedImagesAsComponents}
@@ -310,11 +315,12 @@ export const pageQuery = graphql`
         startingPoint
         type
         wiki
+        creationDate(formatString: "MMMM DD, YYYY")
       }
     }
     allCloudinaryMedia(
       filter: {public_id: {regex: $slug } }
-      sort: {fields: created_at }
+      sort: { fields: created_at }
     ) {
       edges {
         node {
