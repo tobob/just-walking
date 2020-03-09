@@ -25,3 +25,5 @@ From the Cathedral point, we start to see rain and fog. Nice two companions.
 For the first time, we see people that resign due to altitude sickness, near Shira Camp 2 there was an old couple already in rescue car, waiting for transport down, pitty.
 
 Eat, sleep, repeat.
+
+Photos thanks to Mateusz

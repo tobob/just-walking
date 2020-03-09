@@ -31,3 +31,5 @@ There is one tent where is a kitchen and where the rest of our crew is sleeping 
 We also saw a big blue monkey, your guide said that one of them is crazy and like to steal some items from porters.
 
 After dinner, we went to sleep.
+
+Photos thanks to Mateusz

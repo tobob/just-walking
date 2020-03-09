@@ -25,3 +25,5 @@ Lava Tower is a nice place, however, it was bad weather so even photos from ther
 On a Lava Tower, we consume lunch - yes, our crew set up a camp for us. Polish mothers will be proud of us, we ate only meat (chicken) and leave the rest. For the first time altitude gives us a kick.
 
 We are going down to Barranco Camp 3900mnpm. Still raining.
+
+Photos thanks to Mateusz

@@ -31,3 +31,5 @@ We enter 'savannah of tall grasses, heather, and volcanic rock draped with liche
 Shira Camp 1 is in a very nice camp, there are nice views around it.
 
 During the day the weather is a bit nicer. Plan for the rest of the day: lunch, dinner, sleep.
+
+Photos thanks to Mateusz
