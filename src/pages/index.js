@@ -2,9 +2,8 @@ import React, { useEffect, useRef, useState } from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import cloudinary from "cloudinary-core"
-import classNames from 'classnames';
+import classNames from "classnames"
 
 import "../assets/stylesheets/application.sass"
 
@@ -15,27 +14,27 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
   const iso = useRef()
-  const [sortingType, setSortingType] = useState(null);
+  const [sortingType, setSortingType] = useState(null)
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      const Isotope = require("isotope-layout/js/isotope");
+      const Isotope = require("isotope-layout/js/isotope")
       iso.current = new Isotope(`.posts`, {
         itemSelector: `.single-post`,
         layoutMode: "masonry",
         masonry: {
-          fitWidth: true
+          fitWidth: true,
         },
         getSortData: {
-          creationdate: '[date-creation]', // value of attribute
+          creationdate: "[date-creation]", // value of attribute
         },
         sortAscending: false,
-      });
+      })
     }
   }, [])
 
   const setSorting = type => {
-    setSortingType(type);
+    setSortingType(type)
     iso.current.arrange({ sortBy: type })
   }
 
@@ -43,8 +42,20 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <div className="filters">
-        <span onClick={() => setSorting(null)} className={classNames('filter', { 'filter--active': !sortingType })}>Sort by trip date</span>
-        <span onClick={() => setSorting('creationdate')} className={classNames('filter', { 'filter--active': sortingType === 'creationdate' })}>Sort by creation date</span>
+        <span
+          onClick={() => setSorting(null)}
+          className={classNames("filter", { "-active": !sortingType })}
+        >
+          Sort by trip date
+        </span>
+        <span
+          onClick={() => setSorting("creationdate")}
+          className={classNames("filter", {
+            "-active": sortingType === "creationdate",
+          })}
+        >
+          Sort by creation date
+        </span>
       </div>
       <div className="posts-wrapper">
         <div className="posts">
@@ -60,8 +71,13 @@ const BlogIndex = ({ data, location }) => {
             const title = node.frontmatter.title || node.fields.slug
             const { mnpm, creationDate, date } = node.frontmatter
             return (
-              <Link className="single-post" date-creation={creationDate} style={{ boxShadow: `none` }} to={node.fields.slug}>
-                <div key={node.fields.slug} className="post" >
+              <Link
+                className="single-post"
+                date-creation={creationDate}
+                style={{ boxShadow: `none` }}
+                to={node.fields.slug}
+              >
+                <div key={node.fields.slug} className="post">
                   <div className="post__header">
                     <small>{node.frontmatter.date}</small>
                   </div>
