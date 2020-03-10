@@ -15,7 +15,7 @@ title: Kilimanjaro day 1/7
 type: tour
 ---
 
-At 9 am we start from our hotel, after 4 hours and a short breakfast we are at Londorossi Gate, there we spend additional 1-2 hours, this is a time for measure weights for our porters and we consume our lunch boxes.
+At 9 am we start from our hotel, after 4 hours and a short breakfast we are at Londorossi Gate, where we spend additional 1-2 hours, this is a time for measuring weights for our porters and we consume our lunch boxes.
 
 #### It is raining, but the adventure begins.
 

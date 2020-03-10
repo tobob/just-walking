@@ -19,6 +19,6 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Kiczory_(szczyt)
 ---
 
-The plan was to take a train. However, the car won (a much faster way to get to Wisła).
+I initially planned to take a train, however, the car won (a much faster way to get to Wisła).
 
-I remember this trip a very quiet and fast one, there were none people on a path and even in the shelter, there were a few.
+I remember this trip as a very quiet and short. There were no people on the path and even in the shelter, there were only a few.

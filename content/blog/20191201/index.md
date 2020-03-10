@@ -19,6 +19,6 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Cuberniok
 ---
 
-One of the many quick Szyndzielnia tours, about 2-3hours of trekking and you can tell that you were in the mountains at the weekend.
+One of the many quick Szyndzielnia tours, about 2-3 hours of trekking and you can tell that you were in the mountains at the weekend.
 
-When you check a map it turns out that I did finish on Cyberniok, I reach it to the summit and then follow forest paths that lead me back to my parking spot. You can always use mapaturystyczna to find these forest paths, however, if you don't like walking sometimes randomly I prefer using some other paths.
+When you check a map it turns out that I did finish on Cyberniok, I reach its summit and then follow forest paths that lead me back to my parking spot. You can always use mapaturystyczna to find these forest trails, but if you don't like walking off marked paths, I recommend using another route.

@@ -21,7 +21,7 @@ wiki: https://pl.wikipedia.org/wiki/Wielka_Rycerzowa
 
 A very nice and long trip to Rycerzowa. Selfies!
 
-The worst part is getting to Przegibek, this part is quite long and hilly, but after reaching it is easy.
+The worst part is getting to Przegibek, path is quite long and steep, but after reaching it is easy.
 
 On photos, you can see [a tent camp infrastructure]
 (https://mapa-turystyczna.pl/node/baza-namiotowa-przyslop-potocki)

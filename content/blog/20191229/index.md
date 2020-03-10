@@ -24,6 +24,6 @@ There was a problem with finding a path in the first place, but it goes on the r
 
 This trip was right before the end of the year, with no people, a huge amount of snow and silence.
 
-Kiczera is very near a popular mountain Żar, so there were a few people on top of them (because this is easy to reach Żar with a car).
+Kiczera is very near popular mountain Żar, so there were a few people on top of them (because it is easy to reach Żar with a car).
 
 In the middle of a trip is a place where you can eat. It is a huge hotel with a restaurant. They have nice food, so my belly was full for the rest of the day.

@@ -26,9 +26,9 @@ Last time I was there about 3 years ago! This time not using GBS.
 
 Polica and Hala Krupowa are awesome, however, the closeness of Babia Góra does not help.
 
-I start the trip in Zawoja, 2nd largest village in Poland. I did leave the car on a cemetery parking, there is also parking near the church, right on the green path.
+I start the trip in Zawoja, 2nd largest village in Poland. I left the car on a cemetery parking, there is also parking near the church, right on the green path.
 
-Reaching Hala Krupowa is long, but not hard, now when there are plenty of snow difficulty is bigger, but in no-snow days, it should be very easy to handle it. Shelter on Hala Krupowa is very small but magnificent. Don't forget to take cash, because there is no way to pay there with a card.
+Reaching Hala Krupowa takes time, but it's not hard, now when there is plenty of snow difficulty is higher, but in no-snow days, it should be very easy to handle it. Shelter on Hala Krupowa is very small but magnificent. Don't forget to take cash, because there is no way to pay there with a card.
 
 The path from Hala Krupowa to Polica is very easy, should not be any problems with it. Polica is a very nice mountain with a nice viewpoint. There are some artifacts on the top, like one cross and memory board, due to plane crash catastrophe in 1969.
 

@@ -27,6 +27,6 @@ The path to Czantoria was very nice, it is worth a recommendation.
 
 Quick carbohydrates refill in [Chata na Czantori](https://pl.wikipedia.org/wiki/Schronisko_turystyczne_na_Czantorii) and we are going down to Ustroń.
 
-Then going up on Równica, very quick but exhausting elevation. On top, we again eat something in a restaurant. We are checking Równica sumit (there is nothing special there) and we are going down to Brenna.
+Then going up to Równica, very short but still exhausting section with high elevation. On top, we eat again in a restaurant. We are checking Równica summit (there is nothing special there) and we are going down to Brenna.
 
-Then the last climb to Błatnia. We made the last stop for rehydration and decide to go through Klimczok and Szyndzielnia because it will be easier to catch a bus to Bielsko's center.
+Then the last climb to Błatnia. We made the last stop for rehydration and decided to go through Klimczok and Szyndzielnia, because it would be easier to catch a bus to Bielsko's center.

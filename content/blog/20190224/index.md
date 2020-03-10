@@ -19,8 +19,8 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Barania_Góra
 ---
 
-There was plenty of snow! Additionally, it was a frozen one, so where was awesome to walk on this slab.
+There was plenty of snow! Additionally the snow was frozen, so it felt awesome to walk on.
 
-We left our car near the school and when after coming down to Kamesznica Dolna we need to walk about 2km to the car.
+We left our car near a school in Kamesznica Górna, and after coming down to Kamesznica Dolna we had to walk about 2km to the parking.
 
 Yea, I know, too many selfies.

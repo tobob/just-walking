@@ -19,4 +19,4 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Szyndzielnia
 ---
 
-Sunday trip on a Szyndzielnia, there were many of them. It is better than nothing, I would say.
+Sunday trip to Szyndzielnia, there were many of them. It is better than nothing, I would say.

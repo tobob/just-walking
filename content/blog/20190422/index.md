@@ -21,4 +21,4 @@ wiki: https://pl.wikipedia.org/wiki/Hala_Lipowska
 
 ### Crocuses, everywhere!
 
-I want to show them to my father, that's why we decide to go to a Rysianka. There are plenty of them there and the amount of people is low. There was additionally a little amount of snow on the path, so we meet very few amounts of people, that decide to reach Rysianka.
+I wanted to show them to my father, so that's why we decided to go to Rysianka. There are plenty of them there and the number of people is low. There was additionally a little amount of snow on the path, so very few people decided to reach Rysianka that day.

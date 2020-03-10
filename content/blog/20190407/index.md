@@ -19,12 +19,12 @@ type: tour
 wiki: https://en.wikipedia.org/wiki/Kr%C3%A1lick%C3%BD_Sn%C4%9B%C5%BEn%C3%ADk
 ---
 
-A year earlier (during GSS) I promise to myself that I will visit Śnieżnik on a separate trip. I did complete this promise.
+A year earlier (during GSS) I promise myself that I will visit Śnieżnik on a separate trip. And I fulfilled that promise.
 
 Międzygórze is a very nice village with great architecture and even a soul.
 There are some awesome waterfalls and many places where you can eat.
 
-The trip on Śnieżnik was very peaceful and easy. However, I can add a label milestone to this trip.
+The trip to Śnieżnik was very peaceful and easy. However, I can add a label milestone to this trip.
 
 ### Now some personal shit, you don't need to read this
 

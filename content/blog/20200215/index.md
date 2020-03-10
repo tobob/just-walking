@@ -27,4 +27,4 @@ Funny thing, there is John Lennon memorial stone there.
 
 We did start from the forest parking place, we were there early in Saturday, so we didn't have problems with leaving our car, however, there is plenty of parking places in Ostravica (Czech people very like Lysa Hora, and path on this mountain also start in Ostrawica).
 
-We have very nice weather, that's why there are so many photos.
+We had very nice weather, that's why there are so many photos.
