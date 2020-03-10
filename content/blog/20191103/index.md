@@ -19,6 +19,6 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Chrobacza_%C5%81%C4%85ka_(szczyt)
 ---
 
-This is the first logged trip after Kilimanjaro, however, there was a trip on a Skrzyczne meanwhile, but I don't have a proper photo.
+This is the first logged trip after Kilimanjaro.There was a trip on a Skrzyczne in the meanwhile, but I don't have a proper photo.
 
-This was a very windy day, however. We start in a forest parking place, there is a decent about of space there, so it shouldn't be a problem. However, I think that the blue path is one of the hardest ways to reach Chrobacza Łąka.
+This was a very windy day. We start in a forest parking place, there is a decent about of space there, so it shouldn't be a problem. I think that the blue path is one of the hardest ways to reach Chrobacza Łąka.

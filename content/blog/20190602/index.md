@@ -19,7 +19,7 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Chrobacza_%C5%81%C4%85ka_(szczyt)
 ---
 
-This is probably the most common path that people choose to hike Chrobacza.
+This is probably the most popular path that people choose to hike Chrobacza.
 Parking coordinations are above. However, if you are there the first time it can be strange that parking is in this place (because asphalt ends about 100m before the parking place).
 
-It was a very common and fast trip, nothing special.
+It was a very ordinary and fast trip, nothing special.

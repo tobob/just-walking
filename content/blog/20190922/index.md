@@ -21,4 +21,4 @@ wiki: https://pl.wikipedia.org/wiki/Wielka_Rycerzowa
 
 Polish golden autumn. I decide to make a quick tour that reaches two big mountains, Racza and Rycerzowa. The weather was great.
 
-However, I was trying to reach Rycerzowa by following border companies. It was a bad idea because I lost them, path and I need to use GPS to get back to the path.
+However, I was trying to reach Rycerzowa by following boundary markers. It was a bad idea because I lost them, and I need to use GPS to get back to the path.

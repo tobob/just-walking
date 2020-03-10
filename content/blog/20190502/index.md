@@ -21,4 +21,4 @@ wiki: https://pl.wikipedia.org/wiki/Wielka_Rycerzowa
 
 Polish 3-day holidays, Majówka! 2nd day in the mountains. This time, Rycerzowa from Soblówka. I was in this village for the first time in life. It is a very nice one, I recommend it.
 
-The trip was very easy, it was quite winddy but worth.
+The trip was very easy, it was quite windy but worth the effort.

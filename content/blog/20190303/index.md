@@ -23,4 +23,4 @@ A nice trip with my brother. Yea, I know, too many selfies.. My brother was buss
 
 But rules are simple, there needs to be at least one photo without a face. There is! Back of my brother.
 
-Czupel is a mountain that is very close to my heart. It is very easy to reach if you follow the black path.
+Czupel is a mountain that is very close to my heart. It is very easy to reach if you follow the black trail.

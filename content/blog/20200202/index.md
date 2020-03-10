@@ -23,6 +23,6 @@ wiki: https://en.wikipedia.org/wiki/Skrzyczne
 
 Skrzyczne is a very popular mountain so I thought that after coming to the starting point there will be plenty of cars, however, I had no problem with finding a place, additional there is second parking if you follow the yellow path (about 200m from one in a link).
 
-This was a very fast trip, I was going go check my new backpack and realize, that I didn't visit Malinowska for a long time, so this is a time for it.
+This was a very fast trip, I was going go test my new backpack and realized that I didn't visit Malinowska for a long time, so this is a great opportunity to do so.
 
-Actually, the trip was not excellent, I had my normal winter boots instead of hiking ones (they end up in the trash), so my boots were not waterproof. There was a lot of snow and under it was small rivers of melted one, so after about 1h, my boots were wet. Yes, I'm a dork.
+Actually, the trip was not excellent, I had my normal winter boots instead of hiking ones (they end up in the trash), so my boots were not waterproof. There was a lot of snow laying around, and streams of melted snow below it, so after about 1h, my boots were wet. Yes, I'm a dork.

@@ -19,6 +19,6 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Klimczok
 ---
 
-One of the best photos I ever made in the mountains. There was a fog in the city, but after climbing a bit I get an awesome inversion.
+One of the best photos I have ever made in the mountains. There was a fog over the city, but after climbing a bit I got an awesome view of it from a different perspective.
 
-But it was a regular trip to Szyndzielnia/Klimczok. Nothing special.
+It was just a regular trip to Szyndzielnia/Klimczok. Nothing special.

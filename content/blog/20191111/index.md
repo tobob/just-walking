@@ -19,8 +19,8 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Krawc%C3%B3w_Wierch
 ---
 
-11 November is a Polish national holiday. So let's spend them in a place where we can have some snow and eat some vegetarian soup in a shelter, actually mountain hut (bacówka).
+11 November is a Polish national holiday. So let's spend it in a place where we can have some snow and eat some vegetarian soup in a shelter, actually mountain hut (bacówka).
 
-The weather was great! So much snow, while in my village was none. However under this snow was lots of water, so my boots don't like it.
+The weather was great! So much snow, while in my village there weren't any. Unfortunately under the snow there was a lot of water, so my boots don't like it.
 
-From Bory Orawskie to summit of Krawców Wierch is a long way but without any hard climbings. So, easily more. However the plan was different, but life writes his own scenarios. That's why we decide to just go down and follow the normal road.
+From Bory Orawskie to summit of Krawców Wierch is a long way but without any hard climbings. So, easily more. However the plan was different, but life writes its own scenarios. That's why we decide to just go down and follow the normal road.
