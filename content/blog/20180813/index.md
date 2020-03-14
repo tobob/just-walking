@@ -8,7 +8,7 @@ distance: 33.2
 ferns: null
 finishPoint: Jagodna, schelter
 highestMountain: Kamień Rübartscha
-mapaTurystyczna: https://mapa-turystyczna.pl/route/a6nh
+mapaTurystyczna: mapa-turystyczna.pl/route/a6nh
 mnpm: 919
 mountainRange: ['Góry Orlickie', 'Pogórze Orlickie', 'Góry Bystrzyckie']
 mountains: null

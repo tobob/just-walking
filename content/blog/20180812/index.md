@@ -8,7 +8,7 @@ distance: 23.2
 ferns: null
 finishPoint: Lewin Kłodzki, Lasek Miejski, Kalwaria
 highestMountain: Błędne Skały
-mapaTurystyczna: https://mapa-turystyczna.pl/route/a6n5
+mapaTurystyczna: mapa-turystyczna.pl/route/a6n5
 mnpm: 843
 mountainRange: ['Table Mountains']
 mountains: null
