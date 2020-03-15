@@ -14,7 +14,7 @@ mountainRange: ['Table Mountains']
 mountains: null
 parkingCords: null
 startingPoint: Radków
-title: GSS 9/?
+title: GSS day 9/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/B%C5%82%C4%99dne_Ska%C5%82y
 ---

@@ -14,7 +14,7 @@ mountainRange: ['Góry Sowie', 'Góry Bardzkie', 'Obniżenie Noworudzkie', 'Obni
 mountains: ['Malinowa', 'Twierdza Srebrna Góra', 'Góra Wszystkich Swietych']
 parkingCords: null
 startingPoint: Zygmuntówka, shelter
-title: GSS 8/?
+title: GSS day 8/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Kalenica_(g%C3%B3ra)
 ---

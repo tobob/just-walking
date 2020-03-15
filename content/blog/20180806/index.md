@@ -14,7 +14,7 @@ mountainRange: ['Karkonosze', 'Kotlina Jeleniogórska']
 mountains: ['Stóg Izerski', 'Wysoki Kamień', 'Wysoka Kopa', 'Szczernica', 'Sniezne Kotły']
 parkingCords: null
 startingPoint: Odrodzenie, Shelter
-title: GSS 3/?
+title: GSS dat 3/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Schronisko_G%C3%B3rskie_%E2%80%9EDom_%C5%9Al%C4%85ski%E2%80%9D
 ---

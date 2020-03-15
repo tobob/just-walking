@@ -14,7 +14,7 @@ mountainRange: ['Jizera Mountains', 'Karkonosze']
 mountains: ['Stóg Izerski', 'Wysoki Kamień', 'Wysoka Kopa', 'Szczernica', 'Sniezne Kotły']
 parkingCords: null
 startingPoint: Stóg Izerski, Shelter
-title: GSS 2/?
+title: GSS day 2/14
 type: tour
 wiki: https://en.wikipedia.org/wiki/%C5%9Anie%C5%BCne_Kot%C5%82y
 ---

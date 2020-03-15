@@ -14,7 +14,7 @@ mountainRange: ['Jizera Mountains']
 mountains: null
 parkingCords: null
 startingPoint: Świeradów Zdrój
-title: GSS 1/?
+title: GSS day 1/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/St%C3%B3g_(G%C3%B3ry_Izerskie)
 ---

@@ -14,7 +14,7 @@ mountainRange: ['Brama Lubawska', 'Góry Kamienne', 'Góry Stołowe', 'Góry Suc
 mountains: ['Ziuty', 'Lesista Wielka']
 parkingCords: null
 startingPoint: Lubawka
-title: GSS 5/?
+title: GSS day 5/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Bukowiec_(G%C3%B3ry_Suche)
 ---

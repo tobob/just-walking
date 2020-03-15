@@ -14,7 +14,7 @@ mountainRange: ['Góry Kamienne', 'Góry Wałbrzyskie', 'Góry Sowie', 'Góry Su
 mountains: ['Turzyna', 'Jeleniec', 'Jedlińska Kopa', 'Włodarz', 'Moszna', 'Kozia Równia']
 parkingCords: null
 startingPoint: Andrzejówka, shelter
-title: GSS 6/? and 7/?
+title: GSS day 6,7/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Wielka_Sowa
 ---

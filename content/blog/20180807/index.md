@@ -14,7 +14,7 @@ mountainRange: ['Kotlina Jeleniogórska', 'Rudawy Janowickie', 'Brama Lubawska']
 mountains: ['Zadzierna', 'Świerczyna']
 parkingCords: null
 startingPoint: Bukowiec
-title: GSS 4/?
+title: GSS day 4/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Ostra_Ma%C5%82a_(Rudawy_Janowickie)
 ---

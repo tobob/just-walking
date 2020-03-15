@@ -14,7 +14,7 @@ mountainRange: ['Góry Orlickie', 'Pogórze Orlickie', 'Góry Bystrzyckie']
 mountains: null
 parkingCords: null
 startingPoint: Lewin Kłodzki, Lasek Miejski, Kalwaria
-title: GSS 10/?
+title: GSS day 10/14
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Heinrich_R%C3%BCbartsch
 ---
