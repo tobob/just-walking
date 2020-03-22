@@ -1,26 +1,26 @@
 ---
-asphalt: 3
+asphalt: 2
 country: ['Poland']
 creationDate: '2020-03-19'
 date: "2018-04-22"
 difficulty: 2
-distance: 17
-ferns: ['Medra', 'Rookie', 'Daria', 'Kuba', 'Piotrek', 'Michał', 'Zyko', 'Chrupek', 'Całka']
+distance: 16.5
+ferns: ['Medra', 'Zyko', 'Chrupek', 'Całka']
 finishPoint: null
-highestMountain: Chrobacza Łąka
-mapaTurystyczna: mapa-turystyczna.pl/route/z3o3
-mnpm: 828
+highestMountain: Czupel
+mapaTurystyczna: mapa-turystyczna.pl/route/7r17
+mnpm: 930
 mountainRange: ['Little Beskids']
-mountains: null
-parkingCords: goo.gl/maps/RAjK2sPL7N6pCu9B8
-startingPoint: Kozy
-title: Chrobacza Łąka, loop
+mountains: ['Pod Gaikami', 'Magórka']
+parkingCords: goo.gl/maps/mMQHb8uttL4ixrVD6
+startingPoint: Międzybrodzie Żywieckie
+title: Czupel, loop from Międzybrodzie
 type: tour
-wiki: https://pl.wikipedia.org/wiki/Chrobacza_%C5%81%C4%85ka_(szczyt)
+wiki: https://pl.wikipedia.org/wiki/Czupel
 ---
 
-Nice loop, during a nice time. There were about 15 people on this trip, and one photo.
+Nice loop, during a nice time. ~There were about 15 people on this trip, and one photo.~
 
-I highly recommend visiting Zasolnica Reserve - even for wedding photos.
+It turns out that I mess with path, at the beginning I had 1 photo. I assume that it was a tip to Chrobacza, but this one was a trip to Czupel.
 
-I remember that I was a bit sick, so walking up on Chrobacza gave me trouble.
+Photos thanks to Maciej Całka.
