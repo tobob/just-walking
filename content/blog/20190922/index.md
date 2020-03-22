@@ -11,7 +11,7 @@ highestMountain: Rycerzowa Wielka
 mapaTurystyczna: mapa-turystyczna.pl/route/rzz4
 mnpm: 1226
 mountainRange: ['Żywiec Beskids']
-mountains: null
+mountains: ['Wielka Racza']
 parkingCords: goo.gl/maps/XetCer7LTYKFuVUs5
 startingPoint: Rycerka
 title: Rycerzowa Wielka + Wielka Racza

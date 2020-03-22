@@ -19,7 +19,7 @@ type: tour
 wiki: https://pl.wikipedia.org/wiki/Czupel
 ---
 
-Nice loop, during a nice time. ~There were about 15 people on this trip, and one photo.~
+Nice loop, during a nice time.
 
 It turns out that I mess with path, at the beginning I had 1 photo. I assume that it was a tip to Chrobacza, but this one was a trip to Czupel.
 
