@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki', 'Beskid Niski']
 mountains: ['Diabelski Kamień', 'Huzary', 'Kozie Żebro']
 parkingCords: null
 startingPoint: Jaworzyna Krynicka, shelter
-title: GSB 2016 8/?
+title: GSB 2016 day 8/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Jaworzyna_Krynicka
 ---

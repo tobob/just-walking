@@ -14,7 +14,7 @@ mountainRange: ['Silesian Beskids', 'Żywiec Beskids']
 mountains: ['Barania Góra', 'Suchy Groń', 'Magórka Wiślańska', 'Magórka Radziejowska', 'Glinne']
 parkingCords: null
 startingPoint: Przyslop, shelter
-title: GSB 2016 2/?
+title: GSB 2016 day 2/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Rysianka
 ---

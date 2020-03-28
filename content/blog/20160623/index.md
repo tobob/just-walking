@@ -14,7 +14,7 @@ mountainRange: ['Pogórze Orawsko-Jordanowskie', 'Gorce']
 mountains: ['Wysoka', 'Zabornia', 'Maciejowa', 'Obidowiec', 'Stare wierchy']
 parkingCords: null
 startingPoint: Jordanów
-title: GSB 2016 5/?
+title: GSB 2016 day 5/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Turbacz
 ---

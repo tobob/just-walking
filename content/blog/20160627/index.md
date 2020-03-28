@@ -14,7 +14,7 @@ mountainRange: ['Beskid Niski']
 mountains: ['Popowe Wierchy', 'Krzywa']
 parkingCords: null
 startingPoint: Regietów, tent base
-title: GSB 2016 9/?
+title: GSB 2016 day 9/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Rotunda_(g%C3%B3ra)
 ---

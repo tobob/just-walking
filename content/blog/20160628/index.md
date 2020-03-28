@@ -14,7 +14,7 @@ mountainRange: ['Beskid Niski']
 mountains: ['Trzy Kopce', 'Kamień', 'Polana', 'Grzywacka Góra']
 parkingCords: null
 startingPoint: Bartne, mountain hut
-title: GSB 2016 10/?
+title: GSB 2016 day 10/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Magura_(Magura_W%C4%85tkowska)
 ---

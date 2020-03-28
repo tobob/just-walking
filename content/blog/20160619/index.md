@@ -14,7 +14,7 @@ mountainRange: ['Silesian Beskids']
 mountains: ['Równica', 'Soszów','Stozek', 'Kiczory']
 parkingCords: null
 startingPoint: Ustroń
-title: GSB 2016 1/?
+title: GSB 2016 day 1/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Czantoria_Wielka
 ---

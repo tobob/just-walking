@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki', 'Gorce']
 mountains: ['Kiczora', 'Runek', 'Dzwonkówka']
 parkingCords: null
 startingPoint: Turbacz, shelter
-title: GSB 2016 6/?
+title: GSB 2016 day 6/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Lubo%C5%84_Wielki
 ---

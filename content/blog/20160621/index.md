@@ -14,7 +14,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Miziowa, hall', 'Cebulowa Hall', 'Beskid Korbielowski', 'Jaworzyna', 'Mędralowa']
 parkingCords: null
 startingPoint: Rysianka, hall
-title: GSB 2016 3/?
+title: GSB 2016 day 3/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Palenica_(Beskid_%C5%BBywiecki)
 ---

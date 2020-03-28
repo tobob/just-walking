@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki']
 mountains: ['Wielki Rogacz', 'Chata Kordowiec', 'Zadnie Góry', 'Pisana, hall', 'Łabowska, Hall', 'Runek', 'Czubakowska']
 parkingCords: null
 startingPoint: Przechyba, shelter
-title: GSB 2016 7/?
+title: GSB 2016 day 7/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Radziejowa
 ---

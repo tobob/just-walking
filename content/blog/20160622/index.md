@@ -14,7 +14,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Polica', 'Smietanowa hall', 'Złota Grapa', 'Cupel']
 parkingCords: null
 startingPoint: Markowe Szczawiny, shelter
-title: GSB 2016 4/?
+title: GSB 2016 day 4/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Babia_Góra
 ---
