@@ -11,7 +11,7 @@ highestMountain: Spalona Staznica
 mapaTurystyczna: mapa-turystyczna.pl/route/a7hb
 mnpm: 1430
 mountainRange: ['Karkonosze', 'Kotlina Jeleniogórska']
-mountains: ['Stóg Izerski', 'Wysoki Kamień', 'Wysoka Kopa', 'Szczernica', 'Sniezne Kotły']
+mountains: ['Sniezka, almost']
 parkingCords: null
 startingPoint: Odrodzenie, Shelter
 title: GSS dat 3/14
