@@ -16,7 +16,7 @@ parkingCords: null
 startingPoint: Jordanów
 title: GSB 2015 day -3/-1
 type: tour
-wiki: https://en.wikipedia.org/wiki/Hala_Lipowska
+wiki: https://en.wikipedia.org/wiki/Babia_Góra
 ---
 
 After filling resources in Jordanów and nice time visiting restaurants there I follow.
