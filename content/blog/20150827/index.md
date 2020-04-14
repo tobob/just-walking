@@ -7,7 +7,7 @@ difficulty: 5
 distance: 31.5
 ferns: null
 finishPoint: Jordanów
-highestMountain: Babia Góra
+highestMountain: Turbacz
 mapaTurystyczna: mapa-turystyczna.pl/route/y745
 mnpm: 1310
 mountainRange: ['Gorce']
