@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki', 'Small Beskids']
 mountains: ['Kozie Żebro']
 parkingCords: null
 startingPoint: Regetów, tent base
-title: GSB 2015 day -8/-1
+title: GSB 2015 day 9/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Jaworzyna_Krynicka
 ---

@@ -14,7 +14,7 @@ mountainRange: ['Gorce']
 mountains: ['Zabornia']
 parkingCords: null
 startingPoint: Turbacz, shelder
-title: GSB 2015 day -4/-1
+title: GSB 2015 day 13/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Turbacz
 ---

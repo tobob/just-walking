@@ -14,7 +14,7 @@ mountainRange: ['Beskid Niski']
 mountains: ['Chyrowa', 'Krymianka', 'Garb', 'Saint John hermitage']
 parkingCords: null
 startingPoint: Wisłoczek, tent base
-title: GSB 2015 day -11/-1
+title: GSB 2015 day 6/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Cergowa_(g%C3%B3ra)
 ---

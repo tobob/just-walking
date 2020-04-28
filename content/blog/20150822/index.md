@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki', 'Small Beskids']
 mountains: ['Popowe Wierchy']
 parkingCords: null
 startingPoint: Bartne, mountain hut
-title: GSB 2015 day -9/-1
+title: GSB 2015 day 8/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Rotunda_(g%C3%B3ra)
 ---

@@ -14,7 +14,7 @@ mountainRange: ['Beskid Niski']
 mountains: ['Trzy Kopce', 'Kamień', 'Polana', 'Grzywacka Góra', 'Kolanin']
 parkingCords: null
 startingPoint: Chyrowa
-title: GSB 2015 day -10/-1
+title: GSB 2015 day 7/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Magura_(Magura_W%C4%85tkowska)
 ---

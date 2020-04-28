@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki']
 mountains: ['Wielki Rogacz', 'Chata Kordowiec', 'Zadnie Góry', 'Pisana, hall', 'Łabowska, Hall', 'Runek', 'Czubakowska']
 parkingCords: null
 startingPoint: Jaworzyna Krynicka
-title: GSB 2015 day -6/-1
+title: GSB 2015 day 11/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Radziejowa
 ---

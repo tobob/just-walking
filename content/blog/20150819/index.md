@@ -14,7 +14,7 @@ mountainRange: ['Beskid Niski']
 mountains: ['Zrubań', 'Kamień']
 parkingCords: null
 startingPoint: Komańcza, shelter
-title: GSB 2015 day -12/-1
+title: GSB 2015 day 5/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Tokarnia_(Beskid_Niski)
 ---

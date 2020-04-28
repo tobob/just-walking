@@ -14,7 +14,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Mędralowa', 'Miziowa Hall', 'Jaworzyna', 'Onion Hall']
 parkingCords: null
 startingPoint: Markowe Szczawiny, shelter
-title: GSB 2015 day -2/-1
+title: GSB 2015 day 15/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Hala_Lipowska
 ---

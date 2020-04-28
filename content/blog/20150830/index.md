@@ -14,7 +14,7 @@ mountainRange: ['Silesian Beskids']
 mountains: ['Suchy Groń']
 parkingCords: null
 startingPoint: Hala Lipowska, shelter
-title: GSB 2015 day -1/-1
+title: GSB 2015 day 16/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Hala_Lipowska
 ---

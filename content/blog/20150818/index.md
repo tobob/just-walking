@@ -14,7 +14,7 @@ mountainRange: ['Bieszczady']
 mountains: ['Pocak']
 parkingCords: null
 startingPoint: Rabe, ten base
-title: GSB 2015 day -13/-1
+title: GSB 2015 day 4/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Chryszczata
 ---

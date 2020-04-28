@@ -14,7 +14,7 @@ mountainRange: ['Beskid Sądecki']
 mountains: []
 parkingCords: null
 startingPoint: Krynica Zdrój
-title: GSB 2015 day -7/-1
+title: GSB 2015 day 10/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Jaworzyna_Krynicka
 ---

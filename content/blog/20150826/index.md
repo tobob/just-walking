@@ -14,7 +14,7 @@ mountainRange: ['Gorce', 'Beskid Sądecki']
 mountains: ['Lubań', 'Dzwonkówka']
 parkingCords: null
 startingPoint: Przehyba, shelter
-title: GSB 2015 day -5/-1
+title: GSB 2015 day 12/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Turbacz
 ---

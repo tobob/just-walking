@@ -14,7 +14,7 @@ mountainRange: ['Bieszczady']
 mountains: ['Berdo', 'Fereczata', 'Okrąglik', 'Jaworne', 'Wołosań']
 parkingCords: null
 startingPoint: OW Smerek, Smerek
-title: GSB 2015 day -14/-1
+title: GSB 2015 day 3/16
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Jas%C5%82o_(g%C3%B3ra)
 ---

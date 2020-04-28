@@ -14,7 +14,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Polica', 'Smietanowa hall', 'Złota Grapa', 'Cupel']
 parkingCords: null
 startingPoint: Jordanów
-title: GSB 2015 day -3/-1
+title: GSB 2015 day 14/16
 type: tour
 wiki: https://en.wikipedia.org/wiki/Babia_Góra
 ---
