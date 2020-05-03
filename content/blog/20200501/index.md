@@ -28,6 +28,6 @@ Before reaching Barania the weather was good, but after it starts raining.
 
 We met zigzag snake. The only polish venomous snake.
 
-Near Fajkówka we realize that the green path is closed because of highway building and at the same time we were attacked by a dog from the near house. It reaps by trousers and I punched it in the face. That was a very scary situation because this dog was huge.
+Near Fajkówka we realize that the green path is closed because of highway building and at the same time we were attacked by a dog from the near house. It rip by trousers and I punched it in the face. That was a very scary situation because this dog was huge.
 
 We decided to go down to the Kamesznica and follow Soła river back to Węgierska Górka - there are many small paths near that river you can follow.
