@@ -11,8 +11,8 @@ finishPoint: Hala Rysianka, shelter
 highestMountain: Hala Miziowa
 mapaTurystyczna: mapa-turystyczna.pl/route/ai96
 mnpm: 1283
-mountainRange: ['Gorce', 'Pieniny', 'Beskid Sądecki']
-mountains: ['Dzwonkówka', 'Przechyba', 'Lubań', 'Jaworzyny Ochotnickie', 'Gorc', 'Przysłop', 'Sredniak']
+mountainRange: ['Silesian Beskids']
+mountains: ['Jastrzębica', 'Kotarnica', 'Hala Miziowa', 'Hala Cebulowa', 'Trzy Kopce', 'Hala Rysianka']
 parkingCords: goo.gl/maps/AeU2vVBy8c6hiY1k9
 startingPoint: Żywiec
 title: Chłosta Beskidzka II
