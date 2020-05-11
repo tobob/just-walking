@@ -6,7 +6,7 @@ date: "2020-05-09"
 difficulty: 2
 distance: 13.1
 endTime: '13:30'
-ferns: null
+ferns: ['Rookie']
 finishPoint: null
 highestMountain: Trzy Korony
 mapaTurystyczna: mapa-turystyczna.pl/route/w57m
