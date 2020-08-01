@@ -1,0 +1,16 @@
+// this works only on development, thanks to the .gr__localhost class added by React
+// if you're not using React, add a .development or .gr__localhost class to body on dev to enable the debugger
+
+@keyframes bugfinder
+  0%,
+  100%
+    transform: scale(1)
+  50%
+    transform: scale(2)
+
+.gr__localhost
+  .false,
+  .undefined,
+  .className,
+  .null
+    animation: bugfinder infinite 1s !important

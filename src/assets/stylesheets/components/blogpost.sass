@@ -1,0 +1,120 @@
+.blogpost-page
+  flex-direction: row
+  display: flex
+  padding: 20px
+
+  +media-breakpoint-down(md)
+    flex-direction: column
+
+.simple-blogpost
+  display: flex
+  padding: 20px
+  flexDirection: row
+
+  +media-breakpoint-down(md)
+    flex-direction: column
+
+    .blogpost-hero
+      width: 100vw
+      object-fit: cover
+
+.blogpost
+  flex: 3
+  padding-left: 26px
+  padding-right: 20px
+  color: rgba(white, 0.7)
+
+  ul, ol
+    margin-left: 1rem
+
+  +media-breakpoint-down(md)
+    font-size: 80%
+    padding-left: 0px
+    padding-right: 0px
+
+  &-hero
+    height: 100vh
+    width: 50vw
+    object-fit: cover
+
+  .blogpost-content
+    padding: 20px
+
+    +media-breakpoint-down(md)
+      padding: 10px 0
+
+  header
+    margin-left: 20px
+    color: white
+
+    +media-breakpoint-down(md)
+      margin-left: 0
+
+    h1
+      margin-bottom: 0
+      margin-top: 1rem
+
+    +media-breakpoint-down(md)
+      h1
+        margin-top: 0
+
+  .informations
+    border-bottom: 1px rgba($color-pale-green, 1) solid
+    background: linear-gradient(45deg, rgba($color-gunmetal, 0.2) 20%, rgba($color-pale-green, 0.1) 75%);
+    width: 100%
+    padding: 10px
+    margin-bottom: 10px
+
+    section
+      margin-bottom: 12px
+      margin-left: 10px
+      display: flex
+      flex-direction: row
+      position: relative
+
+      +media-breakpoint-down(md)
+        margin-left: 0
+
+      summary
+        color: $color-pale-green
+        opacity: 0.8
+        flex: 1
+
+      .asphalt
+        margin-right: 4px
+        margin-bottom: -3px
+
+      span, a
+        flex: 2
+        padding-left: 10px
+      a
+        box-shadow: none
+        text-decoration: none
+        color: white
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+
+      .separator
+        width: calc(100% + 10px)
+        height: 2px
+        position: absolute
+        bottom: -9px
+        right: -10px
+        background: linear-gradient(45deg, rgba($color-jet, 1) 20%, rgba($color-gunmetal, 0.3) 75%);
+
+footer.date-footer
+  margin-bottom: 30px
+  display: flex;
+  flex-direction: column
+  hr
+    border-top: 1px solid $color-jet
+    margin-bottom: 0
+
+  span
+    font-size: 10px
+    font-weight: 500
+    color: $color-pale-green
+    text-align: center
+    align-self: flex-end
