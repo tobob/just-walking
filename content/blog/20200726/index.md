@@ -12,7 +12,7 @@ mapaTurystyczna: mapa-turystyczna.pl/route/sue1
 mnpm: 1041
 mountainRange: ['Żywiec Beskids']
 mountains: ['Bory Orawskie, mountain pass', 'Gruba Buszyna', 'Wielki Groń']
-parkingCords: https://goo.gl/maps/95Xv8i7qxt2KV5Y68
+parkingCords: goo.gl/maps/95Xv8i7qxt2KV5Y68
 startingPoint: Złatna
 title: Krawców Wierch, loop through Las Złotnice
 type: tour
