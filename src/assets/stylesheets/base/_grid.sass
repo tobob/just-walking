@@ -1,0 +1,122 @@
+%column
+  min-height: 1px
+  padding:
+    left: ($grid-gutter-width / 2)
+    right: ($grid-gutter-width / 2)
+  position: relative
+  width: 100%
+
+=container
+  margin:
+    left: auto
+    right: auto
+  max-width: $container
+  padding:
+    left: $grid-gutter-width
+    right: $grid-gutter-width
+  width: 100%
+
+=container-fluid($gutter: $grid-gutter-width)
+  margin:
+    left: auto
+    right: auto
+  padding:
+    left: $grid-gutter-width
+    right: $grid-gutter-width
+  width: 100%
+
+=row($gutter: $grid-gutter-width)
+  display: flex
+  flex-wrap: wrap
+
+  @if $gutter != 0
+    margin:
+      left: ceil(-$gutter / 2)
+      right: floor(-$gutter / 2)
+  @else
+    > *
+      padding:
+        left: 0
+        right: 0
+
+//----- columns --------------------------------------------------------------------------------------------------------
+=col
+  flex-basis: 0
+  flex-grow: 1
+  max-width: 100%
+
+=col-auto
+  flex: 0 0 auto
+  max-width: none
+  width: auto
+
+//----- extra small columns --------------------------------------------------------------------------------------------
+=column($columns, $gutter: $grid-gutter-width)
+  @extend %column
+  flex: 0 0 percentage($columns / $grid-columns)
+  max-width: percentage($columns / $grid-columns)
+
+=offset($columns)
+  margin-left: percentage($columns / $grid-columns)
+
+=order($columns)
+  order: $columns
+
+//----- small columns --------------------------------------------------------------------------------------------------
+=column-sm($columns, $gutter: $grid-gutter-width)
+  @extend %column
+  +media-breakpoint-up(sm)
+    width: percentage($columns / $grid-columns)
+
+=offset-sm($columns)
+  +media-breakpoint-up(sm)
+    margin-left: percentage($columns / $grid-columns)
+
+=order-sm($columns)
+  +media-breakpoint-up(sm)
+    order: $columns
+
+//----- medium columns -------------------------------------------------------------------------------------------------
+=column-md($columns, $gutter: $grid-gutter-width)
+  @extend %column
+  +media-breakpoint-up(md)
+    flex: 0 0 percentage($columns / $grid-columns)
+    max-width: percentage($columns / $grid-columns)
+
+=offset-md($columns)
+  +media-breakpoint-up(md)
+    margin-left: percentage($columns / $grid-columns)
+
+=order-md($columns)
+  +media-breakpoint-up(md)
+    order: $columns
+
+//----- large columns --------------------------------------------------------------------------------------------------
+=column-lg($columns, $gutter: $grid-gutter-width)
+  @extend %column
+  +media-breakpoint-up(lg)
+    flex: 0 0 percentage($columns / $grid-columns)
+    max-width: percentage($columns / $grid-columns)
+
+=offset-lg($columns)
+  +media-breakpoint-up(lg)
+    margin-left: percentage($columns / $grid-columns)
+
+=order-lg($columns)
+  +media-breakpoint-up(lg)
+    order: $columns
+
+//----- extra large columns --------------------------------------------------------------------------------------------
+=column-xl($columns, $gutter: $grid-gutter-width)
+  @extend %column
+  +media-breakpoint-up(xl)
+    flex: 0 0 percentage($columns / $grid-columns)
+    max-width: percentage($columns / $grid-columns)
+
+=offset-xl($columns)
+  +media-breakpoint-up(xl)
+    margin-left: percentage($columns / $grid-columns)
+
+=order-xl($columns)
+  +media-breakpoint-up(xl)
+    order: $columns

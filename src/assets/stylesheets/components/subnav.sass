@@ -1,0 +1,46 @@
+nav.subnav
+  height: 70px
+  padding-left: 20px
+  padding-right: 20px
+  border-top: 1px solid $color-jet
+  border-bottom: 1px solid rgba($color-avocado, 0.1)
+
+  ul
+    height: 100%
+    display: flex
+    flexWrap: wrap
+    justify-content: space-between
+    list-style: none
+    padding: 0
+    margin-left: 0
+
+    li
+      align-items: center
+      justify-content: center
+      display: flex
+
+      height: 100%
+
+      &:first-of-type
+        margin-right: 10px
+
+      &:last-of-type
+        margin-left: 10px
+
+      a
+        font-family: 'Rubik'
+        line-height: 21px
+        text-decoration: none
+        box-shadow: none
+        color: $color-avocado
+        align-items: center
+        align-content: center
+        display: flex
+
+        +media-breakpoint-down(sm)
+          font-size: 80%
+          line-height: 80%
+
+
+        &:hover
+          color: $color-pale-green
