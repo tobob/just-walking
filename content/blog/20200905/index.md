@@ -8,7 +8,7 @@ distance: 13.3
 ferns: null
 finishPoint: null
 highestMountain: Veľký Rozsutec
-mapaTurystyczna: https://mapa-turystyczna.pl/route/c5g5
+mapaTurystyczna: mapa-turystyczna.pl/route/c5g5
 mnpm: 1609
 mountainRange: ['Malá Fatra']
 mountains: ['Maly Rozsutec']

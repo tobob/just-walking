@@ -8,7 +8,7 @@ distance: 17
 ferns: null
 finishPoint: Martin, rázc.
 highestMountain: Minčol
-mapaTurystyczna: https://mapa-turystyczna.pl/route/blo7
+mapaTurystyczna: mapa-turystyczna.pl/route/blo7
 mnpm: 1364
 mountainRange: ['Malá Fatra']
 mountains: ['Stračniky','Sedlo Okopy', 'Kriva','Raztoky', 'Razsosna','Uplaz']

@@ -8,7 +8,7 @@ distance: 25.1
 ferns: null
 finishPoint: Bystrička
 highestMountain: Veľká lúka
-mapaTurystyczna: https://mapa-turystyczna.pl/route/b9yn
+mapaTurystyczna: mapa-turystyczna.pl/route/b9yn
 mnpm: 1476
 mountainRange: ['Malá Fatra']
 mountains: ['Ostré', 'Horná lúka', 'Veterné', 'Vidlica', 'Krížava', 'Zázriva']
