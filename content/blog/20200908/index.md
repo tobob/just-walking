@@ -8,7 +8,7 @@ distance: 26.5
 ferns: null
 finishPoint: Sklabiňa
 highestMountain: Kľak
-mapaTurystyczna: https://mapa-turystyczna.pl/route/5vil
+mapaTurystyczna: mapa-turystyczna.pl/route/5vil
 mnpm: 1394
 mountainRange: ['Vielka Fatra']
 mountains: ['Svrckim', 'Vyšná Lipova', 'Jarabiná']
