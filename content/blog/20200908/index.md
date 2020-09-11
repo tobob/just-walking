@@ -14,7 +14,7 @@ mountainRange: ['Vielka Fatra']
 mountains: ['Svrckim', 'Vyšná Lipova', 'Jarabiná']
 parkingCords: goo.gl/maps/YuFofWLp2DVGC72a9
 startingPoint: Sklabinský Podzámok
-title: Kľak
+title: Kľak (Vielka Fatra)
 type: tour
 wiki: https://sk.wikipedia.org/wiki/K%C4%BEak_(vrch_vo_Ve%C4%BEkej_Fatre)
 additionalWithGoogleMaps: 1
