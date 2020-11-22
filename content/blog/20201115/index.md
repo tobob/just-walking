@@ -1,12 +1,12 @@
 ---
 asphalt: 0
 country: ['Poland']
-creationDate: '2020-05-06'
-date: "2015-07-04"
+creationDate: '2020-11-22'
+date: "2020-11-15"
 difficulty: 2
 distance: 13.7
 endTime: null
-ferns: ['Tata']
+ferns: ['Maciej', 'Ewelina']
 finishPoint: null
 highestMountain: Babia
 mapaTurystyczna: mapa-turystyczna.pl/route/37e0
@@ -16,11 +16,9 @@ mountains: null
 parkingCords: goo.gl/maps/TY67EERAMJ3MPosX9
 startTime: null
 startingPoint: Krowiarki
-title: Babia Góra with dad
+title: Babia Góra
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Babia_Góra
 ---
 
-Normal trip with my dad to visit queen of Beskids.
-
-It was a nice trip.
+Visiting queen of Beskids one more time, with nice weather and mass of people that are not afraid of COVID.
