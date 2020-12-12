@@ -10,8 +10,13 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+import cloudinary from "cloudinary-core"
+
+const cl = cloudinary.Cloudinary.new()
+cl.config("cloud_name", "just-walking-me")
+
+const SEO = ({ description, lang, meta, title, image }) => {
+  const { site, mainImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -21,11 +26,29 @@ const SEO = ({ description, lang, meta, title }) => {
             author
           }
         }
+        mainImage: cloudinaryMedia(public_id: { eq: "hero" }) {
+          id
+          url
+          secure_url
+          public_id
+        }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
+
+  const imageToProcess = image || mainImage
+
+  const seoImage = cl.url(imageToProcess.public_id, {
+    secure: true,
+    effect: "saturation:50",
+    quality: "auto:good",
+    angle: "exif",
+    crop: "limit",
+    height: 1280,
+  })
+  console.log(seoImage, imageToProcess)
 
   return (
     <Helmet
@@ -44,6 +67,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: title,
         },
         {
+          property: "og:image",
+          content: seoImage,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
@@ -58,6 +85,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: `twitter:creator`,
           content: site.siteMetadata.author,
+        },
+        {
+          name: "twitter:image",
+          content: seoImage,
         },
         {
           name: `twitter:title`,

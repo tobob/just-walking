@@ -40,7 +40,12 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO
+        title="JustWalking.me"
+        description={
+          "This is my place on the internet where I gather and write up all my mountains trips. The Beskids, Tatra mountains, Fatra. All the polish, Slovakia and Czech mountains, and more! "
+        }
+      />
       <div className="filters">
         <span
           onClick={() => setSorting(null)}

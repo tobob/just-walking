@@ -45,7 +45,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     wiki, //
   } = post.frontmatter
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  const { previous, next, slug } = pageContext
 
   const images = data.allCloudinaryMedia
   const mappedImages = images.edges.map(({ node }) => {
@@ -324,15 +324,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     </>
   )
 
+  const fileName = slug.toString().replace(/\//g, "")
+
   return (
     <Layout withoutHero withGoBack location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
-        description={
-          (post.frontmatter.mountainRange &&
-            post.frontmatter.mountainRange.join(", ")) ||
-          post.excerpt
-        }
+        description={post.excerpt}
+        image={{ public_id: fileName }}
       />
       <nav className="subnav">
         <ul>
