@@ -48,7 +48,6 @@ const SEO = ({ description, lang, meta, title, image }) => {
     crop: "limit",
     height: 1280,
   })
-  console.log(seoImage, imageToProcess)
 
   return (
     <Helmet
