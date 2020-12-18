@@ -12,7 +12,7 @@ highestMountain: Barania Góra
 mapaTurystyczna: mapa-turystyczna.pl/route/t6x
 mnpm: 1220
 mountainRange: ['Silesian Beskids']
-mountains: ['Glinne', 'Marórka Wiślańska', 'Magórka Radziejowska']
+mountains: ['Glinne', 'Magórka Wiślańska', 'Magórka Radziejowska']
 parkingCords: goo.gl/maps/Nfb6Ezrbw4CEJjD46
 startTime: '7:00'
 startingPoint: Węgierska Górka
