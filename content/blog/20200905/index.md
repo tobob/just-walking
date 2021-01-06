@@ -12,7 +12,7 @@ mapaTurystyczna: mapa-turystyczna.pl/route/c5g5
 mnpm: 1609
 mountainRange: ['Malá Fatra']
 mountains: ['Maly Rozsutec']
-parkingCords: https://goo.gl/maps/kJPgJXrwCsH8A4xM8
+parkingCords: goo.gl/maps/kJPgJXrwCsH8A4xM8
 startingPoint: Biely Potok
 title: Veľký Rozsutec
 type: tour
