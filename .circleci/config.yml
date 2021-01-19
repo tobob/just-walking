@@ -4,6 +4,9 @@
 
 version: 2.0
 
+orbs:
+  heroku: circleci/heroku@1.2.4
+
 jobs:
   checkout_code:
     docker:
@@ -66,3 +69,9 @@ workflows:
       - tests:
           requires:
             - install_packages
+      - heroku/deploy-via-git:
+           requires:
+             - tests # only run deploy-via-git job if the build job has completed
+           filters:
+             branches:
+               only: master
