@@ -78,6 +78,10 @@
   "jest": {
     "modulePathIgnorePatterns": [
       "<rootDir>/.cache/"
-    ]
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!jquery)"
+    ],
+    "setupFiles": ["./setup.jest.js"]
   }
 }
