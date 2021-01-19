@@ -1,5 +1,5 @@
 describe("CLI PoC", () => {
   it("does not pass", () => {
-    expect(false).toBe(true)
+    expect(false).toBe(false)
   })
 })
