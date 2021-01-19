@@ -31,6 +31,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     endTime, //
     highestMountain, //
     ferns,
+    daysDurration,
     finishPoint, //
     map,
     mapaTurystyczna,
@@ -238,6 +239,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <div className="separator"></div>
               </section>
             )}
+            {daysDurration && (
+              <section>
+                <summary>days Duration</summary>
+                <span>{daysDurration}</span>
+                <div className="separator"></div>
+              </section>
+            )}
             {(asphalt || asphalt === 0) && (
               <section>
                 <summary>howMuchAsphalt</summary>
@@ -392,6 +400,7 @@ export const pageQuery = graphql`
         type
         wiki
         creationDate(formatString: "MMMM DD, YYYY")
+        daysDurration
       }
     }
     allCloudinaryMedia(
