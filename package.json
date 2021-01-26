@@ -43,7 +43,7 @@
     "react-grid-gallery": "^0.5.5",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0-beta.3",
-    "react-lazy-load-image-component": "^1.4.1",
+    "react-lazy-load-image-component": "^1.5.1",
     "react-svg": "^11.0.10",
     "react-typography": "^0.16.19",
     "svg-mountain-range": "^1.0.3",
@@ -82,6 +82,8 @@
     "transformIgnorePatterns": [
       "/node_modules/(?!jquery)"
     ],
-    "setupFiles": ["./setup.jest.js"]
+    "setupFiles": [
+      "./setup.jest.js"
+    ]
   }
 }

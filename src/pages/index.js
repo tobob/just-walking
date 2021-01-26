@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import cloudinary from "cloudinary-core"
 import classNames from "classnames"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import "../assets/stylesheets/application.sass"
 
@@ -86,7 +87,7 @@ const BlogIndex = ({ data, location }) => {
                   <div className="post__header">
                     <small>{node.frontmatter.date}</small>
                   </div>
-                  <img src={url} />
+                  <LazyLoadImage src={url} />
                   <div className="post__overlay" />
                   <div className="post__title">
                     <span className="post__title-main">{title}</span>
