@@ -14,7 +14,7 @@ function Back(props) {
       className="prefix__feather prefix__feather-chevrons-left"
       {...props}
     >
-      <path d="M11 17l-5-5 5-5M18 17l-5-5 5-5" />
+      <path d="M11 17l-5-5 5-5m7 10l-5-5 5-5" />
     </svg>
   )
 }
