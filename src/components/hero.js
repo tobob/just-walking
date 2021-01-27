@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
 
-const Hero = () => {
+const Hero = React.memo(() => {
   const [opacity, setOpacity] = useState(1)
   const [top, setTop] = useState(0)
   const handleScroll = e => {
@@ -62,6 +62,6 @@ const Hero = () => {
       </div>
     </div>
   )
-}
+})
 
 export default Hero
