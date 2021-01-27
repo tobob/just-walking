@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import Gallery from "react-grid-gallery"
 import cloudinary from "cloudinary-core"
-import { LazyLoadImage } from "react-lazy-load-image-component"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import ChevronLeft from "../assets/svg/ChevronLeft"
 import ChevronRight from "../assets/svg/ChevronRight"
@@ -86,7 +85,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const imagesList = mappedImages.map(image => ({ src: image.src }))
 
   const mappedImagesAsComponents = mappedImages.map((image, index) => (
-    <LazyLoadImage
+    <img
+      loading="lazy"
       onClick={() => {
         setSelectedImage(index)
         setModal(true)
