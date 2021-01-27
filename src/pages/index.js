@@ -14,30 +14,6 @@ cl.config("cloud_name", "just-walking-me")
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  const iso = useRef()
-  const [sortingType, setSortingType] = useState(null)
-
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      const Isotope = require("isotope-layout/js/isotope")
-      iso.current = new Isotope(`.posts`, {
-        itemSelector: `.single-post`,
-        layoutMode: "masonry",
-        masonry: {
-          fitWidth: true,
-        },
-        getSortData: {
-          creationdate: "[date-creation]", // value of attribute
-        },
-        sortAscending: false,
-      })
-    }
-  }, [])
-
-  const setSorting = type => {
-    setSortingType(type)
-    iso.current.arrange({ sortBy: type })
-  }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -47,27 +23,11 @@ const BlogIndex = ({ data, location }) => {
           "This is my place on the internet where I gather and write up all my mountains trips. The Beskids, Tatra mountains, Fatra. All the polish, Slovakia and Czech mountains, and more! "
         }
       />
-      <div className="filters">
-        <span
-          onClick={() => setSorting(null)}
-          className={classNames("filter", { "-active": !sortingType })}
-        >
-          Sort by trip date
-        </span>
-        <span
-          onClick={() => setSorting("creationdate")}
-          className={classNames("filter", {
-            "-active": sortingType === "creationdate",
-          })}
-        >
-          Sort by creation date
-        </span>
-      </div>
       <div className="posts-wrapper">
         <div className="posts">
           {posts.map(({ node }) => {
             const fileName = node.fields.slug.toString().replace(/\//g, "")
-            const url = cl.url(`${fileName}.jpg`, {
+            const url = cl.url(fileName, {
               width: 270,
               crop: "fill",
               height: 300,

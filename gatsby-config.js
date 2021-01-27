@@ -10,7 +10,7 @@ module.exports = {
     siteUrl: "https://just-walking.me",
     social: {
       twitter: `bozek.wojciech`,
-      instagram: 'justwalkingme'
+      instagram: "justwalkingme",
     },
     viewport: "width=device-width, initial-scale=1.0, maximum-scale=2.0",
   },
@@ -105,8 +105,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
