@@ -13,8 +13,8 @@ mnpm: 1022
 mountainRange: ['Beskid Wyspowy']
 mountains: null
 parkingCords: null
-startingPoint: Bielsko, Wapiennica
-title: Luboń Wielki
+startingPoint: Rabka
+title: Luboń Wielki with GGCZDZ
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Lubo%C5%84_Wielki
 ---
