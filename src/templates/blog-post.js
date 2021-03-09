@@ -8,6 +8,7 @@ import Carousel, { Modal, ModalGateway } from "react-images"
 import ChevronLeft from "../assets/svg/ChevronLeft"
 import ChevronRight from "../assets/svg/ChevronRight"
 import ExternalLink from "../assets/svg/ExternalLink"
+
 import MapPin from "../assets/svg/MapPin"
 import Map from "../assets/svg/Map"
 import Meh from "../assets/svg/Meh"
