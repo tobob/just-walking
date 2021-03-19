@@ -43,7 +43,7 @@
     "react-images": "^1.1.0-beta.3",
     "react-svg": "^11.0.10",
     "react-typography": "^0.16.19",
-    "svg-mountain-range": "^1.0.3",
+    "svg-mountain-range": "1.0.3",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
