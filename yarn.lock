@@ -15207,7 +15207,7 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-svg-mountain-range@^1.0.3:
+svg-mountain-range@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/svg-mountain-range/-/svg-mountain-range-1.0.3.tgz#7c2451469caaa901f84428bf567a530fc3cba731"
   integrity sha1-fCRRRpyqqQH4RCi/VnpTD8PLpzE=
