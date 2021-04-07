@@ -20,3 +20,5 @@ additionalWithGoogleMaps: null
 ---
 
 Racza again, this time together with Przegibek and Bendoszka. There was still a huge amount of snow on a path.
+
+This was a great day!
