@@ -6,7 +6,7 @@
   "author": "Wojciech Bozek bob",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobob/just-walking"
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "dependencies": {
     "@babel/compat-data": "^7.9.0",
@@ -43,6 +43,7 @@
     "react-images": "^1.1.0-beta.3",
     "react-svg": "^11.0.10",
     "react-typography": "^0.16.19",
+    "sharp": "^0.23.4",
     "svg-mountain-range": "1.0.3",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
@@ -60,10 +61,6 @@
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "changelog": "auto-changelog -p -u --commit-limit false & git add CHANGELOG.md",
     "build": "gatsby build",
