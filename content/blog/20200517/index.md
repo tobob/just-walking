@@ -15,7 +15,7 @@ mountainRange: ['Żywiec Beskids']
 mountains: ['Kręcichłosty', 'Młada Chora', 'Kotarz mountain pass', 'Hutyrów']
 parkingCords: goo.gl/maps/DKSrpGujMQMzCVjJ9
 startingPoint: Rajcza
-title: Muńcół, early spring
+title: Muńcuł, early spring
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Muńcuł
 additionalWithGoogleMaps: 1.9

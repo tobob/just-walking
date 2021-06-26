@@ -12,14 +12,14 @@ highestMountain: Rycerzowa Wielka
 mapaTurystyczna: mapa-turystyczna.pl/route/olrk
 mnpm: 1226
 mountainRange: ['Żywiec Beskids']
-mountains: ['Muńcół']
+mountains: ['Muńcuł']
 parkingCords: goo.gl/maps/3HfqqcH2W9mDpKdb8
 startingPoint: Soblówka, church
-title: Muńcół + Rycerzowa
+title: Muńcuł + Rycerzowa
 type: tour
 wiki: https://pl.wikipedia.org/wiki/Wielka_Rycerzowa
 ---
 
-A nice and fun loop from Soblówka, this is the easiest way to reach Muńców.
+A nice and fun loop from Soblówka, this is the easiest way to reach Muńcuł.
 
 I did take black back path to Soblówka for a first time.

@@ -3,7 +3,7 @@ daysDurration: null
 asphalt: 5
 country: ['Poland']
 creationDate: '2021-06-26'
-date: "2020-06-06"
+date: "2021-06-06"
 difficulty: 3
 distance: 35.7
 ferns: null

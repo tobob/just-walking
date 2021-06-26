@@ -28,7 +28,7 @@ We were not able to do it. Pitty.
 
 We started Friday at about 7 PM. Reaching Hala Boracza from Milówka is not fun at all, a huge amount of asphalt and hilly. Reaching Hala Redykalna is easier after a quick refill on Boracza.
 
-Next mountain is harder - Muńcół - not funny at all.
+Next mountain is harder - Muńcuł - not funny at all.
 
 A quick nap (actually 3 hours) on a Młada Hora with sheep.
 
