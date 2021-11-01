@@ -43,6 +43,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     startingPoint, //
     type, //
     wiki, //
+    strava,
   } = post.frontmatter
   const siteTitle = data.site.siteMetadata.title
   const { previous, next, slug } = pageContext
@@ -207,6 +208,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <span>
                   {startingPoint} - {finishPoint ? finishPoint : startingPoint}
                 </span>
+                <div className="separator"></div>
+              </section>
+            )}
+            {strava && (
+              <section>
+                <summary>strava link</summary>
+                <a href={strava} target="_blank">{strava}</a>
                 <div className="separator"></div>
               </section>
             )}
@@ -401,6 +409,7 @@ export const pageQuery = graphql`
         wiki
         creationDate(formatString: "MMMM DD, YYYY")
         daysDurration
+        strava
       }
     }
     allCloudinaryMedia(
