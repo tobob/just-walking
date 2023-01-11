@@ -30,7 +30,7 @@
     "gatsby-remark-smartypants": "^2.1.20",
     "gatsby-source-cloudinary": "tobob/gatsby-source-cloudinary#master",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "jest": "^26.6.3",
     "lodash": "^4.17.20",
